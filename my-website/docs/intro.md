@@ -13,9 +13,13 @@ diseño particular de tu código..
 
 ## Ventajas de los patrones
 
-Get started by **creating a new site**.
+Los patrones son un juego de herramientas que
+brindan soluciones a problemas habituales
+en el diseño de software. Definen un
+lenguaje común que ayuda a tu
+equipo a comunicarse
+con más eficiencia.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
 
 ### What you'll need
 
