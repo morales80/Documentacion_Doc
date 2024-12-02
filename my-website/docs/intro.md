@@ -4,14 +4,13 @@ sidebar_position: 1
 
 # PATRONES DE DISEÑO
 
-
 Los patrones de diseño (design patterns) son soluciones
 habituales a problemas comunes en el diseño de
 software. Cada patrón es como un plano que se
 puede personalizar para resolver un problema de
 diseño particular de tu código..
 
-# Historia de los patrones
+### Historia de los patrones
 
 El concepto de los patrones fue descrito por Christopher Alexander en El lenguaje de patrones. El libro habla de un “lenguaje” para diseñar el entorno urbano. Las unidades de este lenguaje son los patrones. Pueden describir lo altas que tienen que ser las ventanas, cuántos niveles debe tener un edificio, cuan grandes deben ser las zonas verdes de un barrio, etcétera.
 
@@ -19,7 +18,7 @@ La idea fue recogida por cuatro autores: Erich Gamma, John Vlissides, Ralph John
 
 Desde entonces se han descubierto decenas de nuevos patrones orientados a objetos. La “metodología del patrón” se hizo muy popular en otros campos de la programación, por lo que hoy en día existen muchos otros patrones no relacionados con el diseño orientado a objetos
 
-## Ventajas de los patrones
+### Ventajas
 
 Los patrones son un juego de herramientas que
 brindan soluciones a problemas habituales
@@ -32,13 +31,19 @@ Pues ni más ni menos son formas “estandarizadas” de resolver problemas comu
 
 Las ventajas del uso de patrones son evidentes:
 
-    *Conforman un amplio catálogo de problemas y soluciones
-    *Estandarizan la resolución de determinados problemas
-    *Condensan y simplifican el aprendizaje de las buenas prácticas
-    *Proporcionan un vocabulario común entre desarrolladores
-    *Evitan “reinventar la rueda”
+  * Conforman un amplio catálogo de problemas y soluciones
+  * Estandarizan la resolución de determinados problemas
+  * Condensan y simplifican el aprendizaje de las buenas prácticas
+  * Proporcionan un vocabulario común entre desarrolladores
+  * Evitan “reinventar la rueda”
 
-## Para que sirven
+
+### ¿Para que sirven?
+
+Cuando comenzamos a desarrollar software, es normal que cada persona emplee su propia lógica y experiencia para escribir código. Esto puede dar lugar a sistemas complejos que son difíciles de entender, mantener o mejorar, especialmente si el desarrollador original no está disponible.
+
+Para solucionar este desafío, surgen los patrones de diseño, que son modelos o soluciones probadas que sirven como guías para estructurar el código de manera clara y efectiva.
+
 
 ## Start your site
 
