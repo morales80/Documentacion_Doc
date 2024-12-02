@@ -54,17 +54,13 @@ Un patrón de diseño facilita la creación de módulos que otros programadores 
 
 4. Facilitar el mantenimiento y escalabilidad: Al estructurar el código de forma organizada, los patrones permiten que sea más sencillo de modificar o ampliar según cambien las necesidades del proyecto.
 
-## Start your site
+### ¿Por qué son importantes?
+Aprender y aplicar patrones de diseño es esencial para cualquier programador que aspire a escribir código de calidad. En un mundo ideal, los programadores deberían aprender primero la sintaxis de un lenguaje y luego familiarizarse con los patrones de diseño, ya que estos actúan como una hoja de ruta para resolver problemas de manera profesional y estándar.
 
-Run the development server:
+Adoptar patrones de diseño no solo mejora tus habilidades técnicas, sino que también te convierte en un mejor colaborador dentro de un equipo, aumentando tus oportunidades de éxito en el desarrollo de software.
 
-```bash
-cd my-website
-npm run start
-```
+### Tipos de Patrones de Diseño
+Los patrones de diseño son modelos probados que ayudan a resolver problemas comunes en el desarrollo de software. Estos se agrupan en tres categorías principales, dependiendo del tipo de problema que resuelven:
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+1. Patrones Creacionales
+Estos patrones están diseñados para abordar problemas relacionados con la creación de instancias de objetos, permitiendo delegar esta responsabilidad de manera eficiente. Sus principales objetivos son encapsular el conocimiento de las clases y ocultar cómo se crean o instancian los objetos.
