@@ -5,3 +5,10 @@ El método de plantilla es un patrón de diseño de comportamiento que define el
 
 ## Propósito
 Es definir la estructura de un algoritmo, dejando algunos pasos del algoritmo a ser implementados por las subclases. Este patrón permite que las subclases redefinan ciertos pasos del algoritmo sin cambiar la estructura general o el flujo del mismo.
+
+### Características
+  - Define el esqueleto de un algoritmo en una clase base.
+  - Permite a las subclases sobrescribir pasos del algoritmo sin cambiar su estructura.
+  - Evita la duplicación de código.
+  - Se centra en la reutilización de código.
+  - Permite tener tantas variaciones del mismo algoritmo como se necesite.
