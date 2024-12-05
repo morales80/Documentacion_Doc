@@ -13,7 +13,8 @@ Es gestionar el estado de un objeto y cómo afecta su comportamiento de una mane
   - Permite cambiar el comportamiento del objeto en tiempo de ejecución.
   - Obliga al objeto original a delegar el trabajo a una instancia de las clases de estado.git 
 
-**Estas son algunas ventajas y desventajas de nuestro patrón de diseño de State**
+### Estas son algunas ventajas y desventajas de nuestro patrón de diseño de State
+
 | **Ventajas**                                      | **Desventajas**                                 |
 |--------------------------------------------------|------------------------------------------------|
 | **Mejora la legibilidad**: Al encapsular los estados en clases separadas, el código es más fácil de leer y entender. | **Complejidad adicional**: La implementación del patrón puede agregar complejidad extra al sistema, especialmente si hay muchos estados. |
