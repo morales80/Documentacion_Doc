@@ -1,4 +1,4 @@
-## Strategy
+
 También llamado: Estrategia
 
 ### proposito
