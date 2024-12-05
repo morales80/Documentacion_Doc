@@ -1,0 +1,4 @@
+## Strategy
+También llamado: Estrategia
+
+
