@@ -12,3 +12,12 @@ Es definir la estructura de un algoritmo, dejando algunos pasos del algoritmo a 
   - Evita la duplicación de código.
   - Se centra en la reutilización de código.
   - Permite tener tantas variaciones del mismo algoritmo como se necesite.
+
+**Estas son algunas ventajas y desventajas de nuestro patrón de diseño de State**
+| **Ventajas**                                                                 | **Desventajas**                                                              |
+|-------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
+| **Reutilización de código**: El patrón permite centralizar el algoritmo común en la clase base, evitando la duplicación de código. | **Rigidez**: La estructura del algoritmo está definida en la clase base, lo que puede dificultar la modificación de los pasos sin afectar a las subclases. |
+| **Control del flujo de ejecución**: La clase base define el flujo general, mientras que las subclases proporcionan implementaciones específicas, lo que mejora el control. | **Dependencia de la clase base**: Las subclases están fuertemente acopladas a la clase base y pueden verse limitadas por la estructura definida en la misma. |
+| **Fácil de extender**: Las subclases pueden agregar o modificar el comportamiento de pasos específicos sin cambiar la estructura general del algoritmo. | **Dificultad para cambios estructurales**: Si el algoritmo necesita cambiar sustancialmente, las subclases pueden necesitar ser reescritas, lo que puede ser costoso en términos de mantenimiento. |
+| **Facilita el mantenimiento**: El código común se mantiene en un solo lugar (la clase base), lo que facilita las actualizaciones y el mantenimiento. | **Complejidad**: Para algoritmos muy simples, el uso del patrón puede resultar innecesario, añadiendo complejidad adicional sin un beneficio claro. |
+| **Cohesión**: El patrón ayuda a mantener una alta cohesión dentro de las subclases, ya que cada una se centra solo en la personalización de pasos específicos. | **Herencia excesiva**: Si se tiene una jerarquía muy profunda, puede ser difícil entender y mantener todas las implementaciones del algoritmo. |
