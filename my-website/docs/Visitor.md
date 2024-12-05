@@ -21,3 +21,15 @@ Es separar el algoritmo de los objetos sobre los que opera, permitiendo añadir 
 | **Mejora la extensibilidad**: Es fácil agregar nuevas operaciones sin cambiar las clases base, solo creando nuevos visitantes. | **Dependencia de la jerarquía de clases**: Las clases de elementos deben tener un método `Accept` para permitir que el visitante opere sobre ellas, lo que puede aumentar el acoplamiento. |
 | **Promueve el principio de abierto/cerrado**: Las clases de elementos están cerradas para modificaciones, pero abiertas para la extensión a través de los visitantes. | **No es adecuado para cambios frecuentes**: Si las operaciones en los objetos cambian con frecuencia, el patrón puede requerir constantes cambios en los visitantes, lo que puede ser costoso. |
 | **Facilita la mantenibilidad**: Centraliza las operaciones en los visitantes, lo que facilita su modificación y mantenimiento sin tocar las clases de los elementos. | **Aumento del número de clases**: Se puede generar una gran cantidad de clases visitantes, lo que hace más difícil la gestión del código. |
+
+### Analogía 
+Imagina un experimentado agente de seguros que está deseoso de conseguir nuevos clientes. Puede visitar todos los edificios de un barrio, intentando vender seguros a todo aquel que se va encontrando. Dependiendo del tipo de organización que ocupe el edificio, puede ofrecer pólizas de seguro especializadas:
+
+![Imagen de ejemplo](https://refactoring.guru/images/patterns/content/visitor/visitor-comic-1.png?id=7ee4fa8800f7c4df4e1aa3b1aca2b7f1)
+
+_Un buen agente de seguros siempre está listo para ofrecer pólizas diferentes a los distintos tipos de organizaciones._
+
+  - Si es un edificio residencial, vende seguros médicos.
+  - Si es un banco, vende seguros contra robos.
+  - Si es una cafetería, vende seguros contra incendios e inundaciones. 
+
