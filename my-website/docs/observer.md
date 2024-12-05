@@ -1,4 +1,4 @@
-## Observer
+
 
 También llamado: Observador, Publicación-Suscripción, Modelo-patrón, Event-Subscriber, Listener.
 
