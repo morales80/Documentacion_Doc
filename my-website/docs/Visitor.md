@@ -5,3 +5,10 @@ Visitor es un patrón de diseño de comportamiento que te permite separar algori
 
 ## Propósito
 Es separar el algoritmo de los objetos sobre los que opera, permitiendo añadir nuevas operaciones a una estructura de objetos sin modificar las clases de esos objetos. En lugar de cambiar la estructura de las clases, el patrón permite añadir nuevas funcionalidades o comportamientos a través de un visitante.
+
+### Características
+  - Permite ejecutar una operación sobre un conjunto de objetos con distintas clases.
+  - Permite añadir nuevas operaciones a las estructuras de objetos existentes sin modificarlas.
+  - Es una forma de implementar el Principio Abierto-Cerrado (OCP). 
+  - Los visitantes pueden carecer del acceso necesario a los campos y métodos privados de los elementos. 
+  - Se debe actualizar todos los visitantes cada vez que una clase se añada o elimine.
