@@ -131,3 +131,14 @@ class Application is
             "admin@example.com",
             "Someone has changed the file: %s")
         editor.events.subscribe("save", emailAlerts)
+
+### Cómo implementarlo
+1. Repasa tu lógica de negocio e intenta dividirla en dos partes: la funcionalidad central, independiente del resto de código, actuará como notificador; el resto se convertirá en un grupo de clases suscriptoras.
+
+2. Declara la interfaz suscriptora. Como mínimo, deberá declarar un único método actualizar.
+
+3. Declara la interfaz notificadora y describe un par de métodos para añadir y eliminar de la lista un objeto suscriptor. Recuerda que los notificadores deben trabajar con suscriptores únicamente a través de la interfaz suscriptora.
+
+4. Crea clases notificadoras concretas. Cada vez que suceda algo importante dentro de una notificadora, deberá notificar a todos sus suscriptores.
+
+![implementacion](https://th.bing.com/th/id/R.cf6415b099a82395399c3c8b57aa1940?rik=rGU9Bs47BwSNlg&pid=ImgRaw&r=0)
