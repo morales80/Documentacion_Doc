@@ -21,3 +21,18 @@ Es separar la construcción de un objeto complejo de su representación, permiti
 | **Flexibilidad**: Permite variar la representación final de un objeto configurando diferentes pasos de construcción. | **Más código**: Comparado con otros enfoques (como constructores telescópicos), puede requerir más líneas de código para configurarlo. |
 | **Desacopla la creación y la representación**: Separa la lógica de construcción de la lógica del objeto, mejorando la claridad del diseño. | **Complejidad innecesaria**: Puede ser excesivo para objetos que no son lo suficientemente complejos como para justificar su uso. |
 | **Promueve la inmutabilidad**: Garantiza que el objeto esté completamente construido antes de ser utilizado, evitando estados inconsistentes. | **Dependencia del Director (opcional)**: Si se usa un Director, este puede agregar una capa adicional que no siempre es necesaria. |
+
+### Analogía 
+Imagínese a un agente de seguros experimentado que está ansioso por conseguir nuevos clientes. Puede visitar todos los edificios de un vecindario, tratando de vender seguros a todos los que conoce. Dependiendo del tipo de organización que ocupe el edificio, puede ofrecer pólizas de seguro especializadas:
+
+![Imagen de ejemplo](https://refactoring.guru/images/patterns/diagrams/visitor/example.png?id=d66acd1b9096c47db17ab3bb82b54a59)
+
+_Un buen agente de seguros siempre está dispuesto a ofrecer diferentes pólizas a varios tipos de organizaciones._
+
+  - Si se trata de un edificio residencial, vende seguros médicos.
+  - Si es un banco, vende seguros contra robos.
+  - Si se trata de una cafetería, vende seguros contra incendios e inundaciones.
+
+
+
+
