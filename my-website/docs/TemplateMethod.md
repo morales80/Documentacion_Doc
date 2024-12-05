@@ -13,7 +13,7 @@ Es definir la estructura de un algoritmo, dejando algunos pasos del algoritmo a 
   - Se centra en la reutilización de código.
   - Permite tener tantas variaciones del mismo algoritmo como se necesite.
 
-**Estas son algunas ventajas y desventajas de nuestro patrón de diseño de State**
+### Estas son algunas ventajas y desventajas de nuestro patrón de diseño de State**
 | **Ventajas**                                                                 | **Desventajas**                                                              |
 |-------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
 | **Reutilización de código**: El patrón permite centralizar el algoritmo común en la clase base, evitando la duplicación de código. | **Rigidez**: La estructura del algoritmo está definida en la clase base, lo que puede dificultar la modificación de los pasos sin afectar a las subclases. |
@@ -22,5 +22,6 @@ Es definir la estructura de un algoritmo, dejando algunos pasos del algoritmo a 
 | **Facilita el mantenimiento**: El código común se mantiene en un solo lugar (la clase base), lo que facilita las actualizaciones y el mantenimiento. | **Complejidad**: Para algoritmos muy simples, el uso del patrón puede resultar innecesario, añadiendo complejidad adicional sin un beneficio claro. |
 | **Cohesión**: El patrón ayuda a mantener una alta cohesión dentro de las subclases, ya que cada una se centra solo en la personalización de pasos específicos. | **Herencia excesiva**: Si se tiene una jerarquía muy profunda, puede ser difícil entender y mantener todas las implementaciones del algoritmo. |
 
-### Analogía del Patrón Template Method
+### Analogía del mundo real
+
 
