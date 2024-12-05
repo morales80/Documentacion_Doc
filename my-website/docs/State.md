@@ -11,7 +11,7 @@ Es gestionar el estado de un objeto y cómo afecta su comportamiento de una mane
   - Desacopla el comportamiento del objeto de su implementación.
   - Extrae los comportamientos relacionados con el estado y los coloca en clases de estado separadas.
   - Permite cambiar el comportamiento del objeto en tiempo de ejecución.
-  - Obliga al objeto original a delegar el trabajo a una instancia de las clases de estado. 
+  - Obliga al objeto original a delegar el trabajo a una instancia de las clases de estado.git 
 
 **Estas son algunas ventajas y desventajas de nuestro patrón de diseño de State**
 | **Ventajas**                                      | **Desventajas**                                 |

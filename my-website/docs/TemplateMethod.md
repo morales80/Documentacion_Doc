@@ -21,3 +21,6 @@ Es definir la estructura de un algoritmo, dejando algunos pasos del algoritmo a 
 | **Fácil de extender**: Las subclases pueden agregar o modificar el comportamiento de pasos específicos sin cambiar la estructura general del algoritmo. | **Dificultad para cambios estructurales**: Si el algoritmo necesita cambiar sustancialmente, las subclases pueden necesitar ser reescritas, lo que puede ser costoso en términos de mantenimiento. |
 | **Facilita el mantenimiento**: El código común se mantiene en un solo lugar (la clase base), lo que facilita las actualizaciones y el mantenimiento. | **Complejidad**: Para algoritmos muy simples, el uso del patrón puede resultar innecesario, añadiendo complejidad adicional sin un beneficio claro. |
 | **Cohesión**: El patrón ayuda a mantener una alta cohesión dentro de las subclases, ya que cada una se centra solo en la personalización de pasos específicos. | **Herencia excesiva**: Si se tiene una jerarquía muy profunda, puede ser difícil entender y mantener todas las implementaciones del algoritmo. |
+
+### Analogía del Patrón Template Method
+
