@@ -142,3 +142,12 @@ class Application is
 4. Crea clases notificadoras concretas. Cada vez que suceda algo importante dentro de una notificadora, deberá notificar a todos sus suscriptores.
 
 ![implementacion](https://th.bing.com/th/id/R.cf6415b099a82395399c3c8b57aa1940?rik=rGU9Bs47BwSNlg&pid=ImgRaw&r=0)
+
+### Pros 
+- Principio de abierto/cerrado. Puedes introducir nuevas clases suscriptoras sin tener que cambiar el código de la notificadora (y viceversa si hay una interfaz notificadora).
+
+- Puedes establecer relaciones entre objetos durante el tiempo de ejecución.
+
+ ### Contras
+- Los suscriptores son notificados en un orden aleatorio.
+![pros y contras](https://th.bing.com/th/id/R.2e07242a2094f7bfff7e7e8578067be7?rik=OFXf6sDZs6lvQQ&pid=ImgRaw&r=0)
