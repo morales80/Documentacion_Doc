@@ -23,6 +23,16 @@ Es definir la estructura de un algoritmo, dejando algunos pasos del algoritmo a 
 | **Cohesión**: El patrón ayuda a mantener una alta cohesión dentro de las subclases, ya que cada una se centra solo en la personalización de pasos específicos. | **Herencia excesiva**: Si se tiene una jerarquía muy profunda, puede ser difícil entender y mantener todas las implementaciones del algoritmo. |
 
 ### Analogía del mundo real
+El enfoque del método plantilla puede emplearse en la construcción de viviendas en masa. El plan arquitectónico para construir una casa estándar puede contener varios puntos de extensión que permitirán a un potencial propietario ajustar algunos detalles de la casa resultante.
+
+![Imagen de ejemplo](https://refactoring.guru/images/patterns/diagrams/template-method/live-example.png?id=2485d52852f87da06c9cc0e2fd257d6a)
+
+_Un plan arquitectónico típico puede alterarse ligeramente para que encaje mejor con las necesidades del cliente._
+
+Cada paso de la construcción, como colocar los cimientos, el armazón, construir las paredes, instalar las tuberías para el agua y el cableado para la electricidad, etc., puede cambiarse ligeramente para que la casa resultante sea un poco diferente de las demás.
+
+
+
 
 
 
