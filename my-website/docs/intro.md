@@ -62,5 +62,14 @@ Adoptar patrones de diseño no solo mejora tus habilidades técnicas, sino que t
 ### Tipos de Patrones de Diseño
 Los patrones de diseño son modelos probados que ayudan a resolver problemas comunes en el desarrollo de software. Estos se agrupan en tres categorías principales, dependiendo del tipo de problema que resuelven:
 
-1. Patrones Creacionales
+####  1. Patrones Creacionales
+
 Estos patrones están diseñados para abordar problemas relacionados con la creación de instancias de objetos, permitiendo delegar esta responsabilidad de manera eficiente. Sus principales objetivos son encapsular el conocimiento de las clases y ocultar cómo se crean o instancian los objetos.
+
+Ejemplo de patrones creacionales:
+
+* **Singleton:** Garantiza que una clase tenga una única instancia en todo el programa.
+* **Prototype:** Permite clonar instancias ya existentes, ideal para evitar la creación repetitiva de objetos similares.
+* **Abstract Factory:** Proporciona una interfaz para crear familias de objetos relacionados sin especificar sus clases concretas.
+* **Builder:** Facilita la construcción de objetos complejos mediante pasos definidos, mejorando la legibilidad y escalabilidad.
+* **Factory Method:** Proporciona un método para crear objetos basándose en el tipo requerido.
