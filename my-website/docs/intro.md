@@ -66,10 +66,24 @@ Los patrones de diseño son modelos probados que ayudan a resolver problemas com
 
 Estos patrones están diseñados para abordar problemas relacionados con la creación de instancias de objetos, permitiendo delegar esta responsabilidad de manera eficiente. Sus principales objetivos son encapsular el conocimiento de las clases y ocultar cómo se crean o instancian los objetos.
 
-Ejemplo de patrones creacionales:
+Ejemploss de patrones creacionales:
 
 * **Singleton:** Garantiza que una clase tenga una única instancia en todo el programa.
 * **Prototype:** Permite clonar instancias ya existentes, ideal para evitar la creación repetitiva de objetos similares.
 * **Abstract Factory:** Proporciona una interfaz para crear familias de objetos relacionados sin especificar sus clases concretas.
 * **Builder:** Facilita la construcción de objetos complejos mediante pasos definidos, mejorando la legibilidad y escalabilidad.
 * **Factory Method:** Proporciona un método para crear objetos basándose en el tipo requerido.
+
+#### 2. Patrones Estructurales
+
+Estos patrones se centran en la composición y estructura de clases y objetos, definiendo cómo se relacionan entre sí para formar sistemas complejos.
+
+Ejemplos de patrones estructurales:
+
+* **Bridge (Puente):** Separa la abstracción de la implementación, facilitando su evolución independiente.
+* **Decorator (Decorador):** Añade funcionalidades a un objeto de forma dinámica sin modificar su estructura base.
+* **Facade (Fachada):** Ofrece una interfaz simple para interactuar con sistemas complejos.
+* **Adapter:** Permite que dos clases incompatibles trabajen juntas al actuar como intermediario.
+* **Composite:** Facilita el trabajo con objetos jerárquicos al tratarlos de manera uniforme.
+* **Flyweight:** Optimiza el uso de recursos compartiendo objetos similares para reducir el consumo de memoria.
+* **Proxy:** Introduce un intermediario que controla el acceso a un objeto, útil por razones de seguridad o complejidad.
