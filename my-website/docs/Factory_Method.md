@@ -4,6 +4,20 @@ El Factory Method es un patrón de diseño creacional que define una interfaz en
 
 Este patrón es especialmente útil cuando se necesita evitar el uso directo del operador new y se desea mantener el código abierto a extensiones pero cerrado a modificaciones, cumpliendo con el principio Open/Closed de SOLID.
 
+### Ventajas del Patrón 
+
+**Desacoplamiento:**
+* Separa la lógica de creación de objetos de su uso, haciendo el sistema más flexible y fácil de extender.
+
+**Extensibilidad:**
+* Agregar nuevos productos no requiere modificar el código del creador o cliente existente, solo se añaden nuevas subclases del creador y del producto.
+
+**Cumple con el Principio Abierto/Cerrado:**
+Permite añadir nuevas funcionalidades (productos o creadores) sin cambiar el código existente.
+
+**Control de creación:**
+Centraliza la creación de objetos, lo que permite controlar cómo y cuándo se crean los productos.
+
 ### Estructura
 
 Las clases principales en este patrón son el creador y el producto. El objetivo principal es que el creador pueda generar instancias de productos sin depender directamente de los tipos concretos de estos. Esto significa que los detalles específicos de los productos no deben estar reflejados dentro del creador.
@@ -43,6 +57,7 @@ La solución consiste en introducir un método abstracto, conocido como el méto
 
 **Sobrescritura en subclases:**
 * Las subclases del creador implementan este método abstracto, devolviendo instancias específicas de las subclases de los productos. De esta manera, se mantiene el principio de abierto/cerrado, ya que se pueden añadir nuevas subclases de productos y creadores sin modificar el código base existente.
+
 
 
 
