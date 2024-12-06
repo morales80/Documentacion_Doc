@@ -211,7 +211,7 @@ class Application is
  
 - _Puedes ensamblar un grupo de comandos simples para crear uno complejo._
 
-! [ventajas](https://www.livebeep.com/web/wp1/wp-content/uploads/2023/01/Diseno-sin-titulo-33.jpg)
+![ventajas](https://www.livebeep.com/web/wp1/wp-content/uploads/2023/01/Diseno-sin-titulo-33.jpg)
 
 
 ## Contras
