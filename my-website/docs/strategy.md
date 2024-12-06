@@ -28,7 +28,7 @@ _Imagina que estás eligiendo cómo cocinar un huevo. Puedes freírlo, hervirlo 
 ## Pseudocódigo
 _En este ejemplo, el contexto utiliza varias estrategias para ejecutar diversas operaciones aritméticas._
 
-// La interfaz estrategia declara operaciones comunes a todas
+```// La interfaz estrategia declara operaciones comunes a todas
 // las versiones soportadas de algún algoritmo. El contexto
 // utiliza esta interfaz para invocar el algoritmo definido por
 // las estrategias concretas.
