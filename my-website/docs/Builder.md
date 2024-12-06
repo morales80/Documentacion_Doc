@@ -23,16 +23,27 @@ Es separar la construcción de un objeto complejo de su representación, permiti
 | **Promueve la inmutabilidad**: Garantiza que el objeto esté completamente construido antes de ser utilizado, evitando estados inconsistentes. | **Dependencia del Director (opcional)**: Si se usa un Director, este puede agregar una capa adicional que no siempre es necesaria. |
 
 ### Analogía 
-Imagínese a un agente de seguros experimentado que está ansioso por conseguir nuevos clientes. Puede visitar todos los edificios de un vecindario, tratando de vender seguros a todos los que conoce. Dependiendo del tipo de organización que ocupe el edificio, puede ofrecer pólizas de seguro especializadas:
+Imagina que estás en un restaurante de comida rápida donde puedes armar tu propia hamburguesa personalizada.
+
+**Menú Base:** El restaurante tiene una lista de ingredientes (pan, carne, queso, lechuga, tomate, etc.).
+
+**Construcción Paso a Paso:** Tú decides qué ingredientes incluir, en qué orden, y cómo debe ser la hamburguesa (doble carne, sin queso, etc.).
+
+**Cocinero (Builder)** Es quien sigue tus instrucciones para armar la hamburguesa exactamente como tú la quieres.
+
+**Cajero (Director):** Coordina el proceso y asegura que el cocinero siga las instrucciones para construir la hamburguesa de acuerdo con tu pedido.
+
+**Hamburguesa Final:** Es el producto terminado, que puede ser diferente para cada cliente dependiendo de sus preferencias.
+
+### Código de Implementación 
+En este ejemplo, el patrón Visitor agrega compatibilidad con la exportación XML a la jerarquía de clases de formas geométricas.
 
 ![Imagen de ejemplo](https://refactoring.guru/images/patterns/diagrams/visitor/example.png?id=d66acd1b9096c47db17ab3bb82b54a59)
 
-_Un buen agente de seguros siempre está dispuesto a ofrecer diferentes pólizas a varios tipos de organizaciones._
+_Exportación de varios tipos de objetos a formato XML a través de un objeto de visitante._
 
-  - Si se trata de un edificio residencial, vende seguros médicos.
-  - Si es un banco, vende seguros contra robos.
-  - Si se trata de una cafetería, vende seguros contra incendios e inundaciones.
-
-
+```bash
+   
+```
 
 
