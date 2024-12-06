@@ -13,7 +13,7 @@ _La orden se coloca en la lista de tareas del día, esperando a que un mensajero
 
 _La orden de servicio actúa como un comando, ya que contiene toda la información necesaria para completar la tarea. Esto permite que la entrega se realice de manera eficiente sin necesidad de que el mensajero tenga que contactarte constantemente para pedir aclaraciones._
 
-![Analogía](https://files.oaiusercontent.com/file-Fxj73DyVNMj54rJsRhpXwe?se=2024-12-06T05%3A19%3A52Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D31abfb53-2f30-43a6-a0ac-e78815db98dc.webp&sig=xzv3%2BuxlsQ0y2Vu%2BqOreu0OLS4IFKVpoSJ2qglIzrt8%3D)
+![Analogía](https://static.vecteezy.com/system/resources/previews/007/112/283/non_2x/young-man-delivered-the-parcel-courier-with-a-cardboard-box-parcel-delivery-service-photo.jpg)
 
 ## Estructura
 ![Estructura](https://refactoring.guru/images/patterns/diagrams/command/structure-indexed.png?id=95529d7282dc7bc1c5bc443423b1cf4f)
