@@ -125,5 +125,9 @@ A la hora de implementar patrones de diseño, es importante evitar algunos error
 - **Patrones mal aplicados:** Implementar un patrón sin comprender sus beneficios o sin tener en cuenta el contexto puede resultar en un diseño innecesariamente complejo.
 - **No adaptar los patrones:** Aplicar un patrón de manera rígida sin considerar el contexto específico del proyecto puede generar un diseño ineficiente.
 
+>*_Los patrones de diseño son soluciones a problemas comunes en el proceso de diseñar software. Son como "planos" ya hechos que se pueden ajustar a problemas recurrentes en el diseño de tu código_*
+>
+>![](https://preview.redd.it/mhw8mdskn1w41.gif?width=480&auto=webp&s=d19ff2c6c0f67c2d927765268345cfba9201d4c3)
+
 >En esencia, los patrones de diseño no son recetas mágicas, sino herramientas poderosas que permiten escribir código de calidad profesional. Al aplicar estas soluciones probadas, los desarrolladores pueden enfrentar desafíos comunes con confianza, mejorar la colaboración en equipo y crear software robusto y escalable. Aprender a utilizarlos es un paso clave para evolucionar como programador y optimizar el proceso de desarrollo.
 
