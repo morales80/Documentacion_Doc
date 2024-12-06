@@ -49,3 +49,5 @@ En el patrón Singleton, la clase declara un método estático **_getInstance()_
 
 El constructor de la clase Singleton debe estar oculto o privado, lo que impide que otros objetos o clases creen nuevas instancias de la clase directamente. De esta manera, la única forma de acceder al objeto Singleton es llamando al método getInstance(). Este método garantiza que solo se cree una instancia de la clase y que se reutilice esta instancia siempre que sea necesario.
 
+*Diagrama diagrama de patrón de diseño Singleton*
+![Diagrama](https://refactoring.guru/images/patterns/diagrams/singleton/structure-en.png?id=4e4306d3a90f40d74c7a4d2d2506b8ec)
