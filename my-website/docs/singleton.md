@@ -52,7 +52,7 @@ El constructor de la clase Singleton debe estar oculto o privado, lo que impide 
 *Diagrama diagrama de patrón de diseño Singleton*
 ![Diagrama](https://refactoring.guru/images/patterns/diagrams/singleton/structure-en.png?id=4e4306d3a90f40d74c7a4d2d2506b8ec)
 
-### Pseudocódigo:
+### Ejemplo practico de codigo:
 
 En este caso, la clase ConfiguracionApp actúa como un Singleton. La clase no tiene un constructor público, por lo que la única manera de obtener su instancia es mediante el método obtenerConfiguracion. Este método asegura que la configuración sea una sola instancia que se mantenga constante durante la ejecución de la aplicación.
 
