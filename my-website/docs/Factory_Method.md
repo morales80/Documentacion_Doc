@@ -18,17 +18,13 @@ Permite añadir nuevas funcionalidades (productos o creadores) sin cambiar el c�
 * **_Control de creación:_**
 Centraliza la creación de objetos, lo que permite controlar cómo y cuándo se crean los productos.
 
-**Desacoplamiento:**
-* Separa la lógica de creación de objetos de su uso, haciendo el sistema más flexible y fácil de extender.
+### Desventajas del patrón:
 
-**Extensibilidad:**
-* Agregar nuevos productos no requiere modificar el código del creador o cliente existente, solo se añaden nuevas subclases del creador y del producto.
+* **_Mayor complejidad:_** Introduce más clases y métodos, lo que puede complicar el diseño si no se gestiona adecuadamente.
 
-**Cumple con el Principio Abierto/Cerrado:**
-Permite añadir nuevas funcionalidades (productos o creadores) sin cambiar el código existente.
+* **_Dependencia de subclases:_** Requiere una estructura jerárquica de clases, lo que puede llevar a una alta dependencia entre ellas.
 
-**Control de creación:**
-Centraliza la creación de objetos, lo que permite controlar cómo y cuándo se crean los productos.
+* **_Difícil de modificar:_** Si se desea cambiar la creación de productos, se deben modificar varias subclases del creador, lo que puede afectar la mantenibilidad.
 
 ### Estructura
 
