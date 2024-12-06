@@ -29,3 +29,13 @@ Los datos necesarios para ejecutar una solicitud se pueden almacenar como atribu
 4. La clase ***Receptora*** es la que contiene la lógica principal para ejecutar las tareas. Prácticamente cualquier objeto puede desempeñar el papel de receptor. En este patrón, los comandos se encargan principalmente de manejar los detalles de cómo se envía la solicitud al receptor, pero es este último quien realiza el trabajo real.
 
 5. El ***Cliente*** crea y configura los objetos de comando concretos. El cliente debe pasar todos los parámetros de la solicitud, incluyendo una instancia del receptor, dentro del constructor del comando. Después de eso, el comando resultante puede asociarse con uno o varios emisores.
+
+## Pseudocódigo
+
+En este ejemplo, el patrón ***Command*** ayuda a rastrear el historial de operaciones ejecutadas y hace posible revertir una operación si es necesario.
+
+![Operaciones que no se pueden realizar en un editor de texto.](https://refactoring.guru/images/patterns/diagrams/command/example.png?id=1f42c8395fe54d0e409026b91881e2a0)
+
+_Los comandos que modifican el estado del editor, como cortar y pegar, primero guardan una copia del estado actual antes de ejecutar la acción. Esto asegura que, si es necesario deshacer el cambio, se pueda restaurar fácilmente el estado anterior. Una vez ejecutado, el comando se almacena en un historial (usualmente una pila) junto con la copia del estado del editor en ese momento. Si el usuario decide revertir una acción, la aplicación simplemente toma el último comando del historial y usa la copia de seguridad para restaurar el estado original._
+
+_El cliente, como los elementos de la interfaz gráfica o el historial de comandos, no depende de implementaciones específicas de comandos. En su lugar, interactúa con ellos a través de una interfaz común. Esto permite agregar nuevos comandos a la aplicación sin afectar el código existente, manteniendo el diseño flexible y fácil de extender._
