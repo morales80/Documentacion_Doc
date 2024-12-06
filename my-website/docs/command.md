@@ -185,6 +185,20 @@ class Application is
 
 - **Utiliza el patrón Command cuando quieras implementar operaciones reversibles.**
 
+## Cómo implementarlo
 
+1. Declara la interfaz de comando con un único método de ejecución.
+
+2. Empieza extrayendo solicitudes y poniéndolas dentro de clases concretas de comando que implementen la interfaz de comando. Cada clase debe contar con un grupo de campos para almacenar los argumentos de las solicitudes junto con referencias al objeto receptor. Todos estos valores deben inicializarse a través del constructor del comando.
+
+3. Identifica clases que actúen como emisoras. Añade los campos para almacenar comandos dentro de estas clases. Las emisoras deberán comunicarse con sus comandos tan solo a través de la interfaz de comando. Normalmente las emisoras no crean objetos de comando por su cuenta, sino que los obtienen del código cliente.
+
+4. Cambia las emisoras de forma que ejecuten el comando en lugar de enviar directamente una solicitud al receptor.
+
+5. El cliente debe inicializar objetos en el siguiente orden:
+
+- Crear receptores.
+- Crear comandos y asociarlos con receptores si es necesario.
+- Crear emisores y asociarlos con comandos específicos.
 
 
