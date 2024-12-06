@@ -2,7 +2,7 @@
 
 El patrón **Chain of Responsibility** es una solución de diseño que aborda la distribución dinámica de responsabilidades en sistemas complejos. Este enfoque permite procesar solicitudes mediante una cadena de manejadores, donde cada uno evalúa si puede resolver el problema o pasarlo al siguiente elemento en la secuencia. Este modelo fomenta el desacoplamiento entre los emisores y receptores de solicitudes, mejorando la flexibilidad y modularidad del código. En esta introducción exploraremos cómo funciona este patrón, su utilidad en la programación y ejemplos prácticos para entender su implementación y ventajas.
 
-## ¿Cómo Funciona?
+### ¿Cómo Funciona?
 
 **Cuando se recibe una solicitud, cada manejador:**
 * Evalúa si tiene la capacidad para procesarla.
@@ -42,7 +42,23 @@ Una vez implementado el patrón, surgen varias ventajas que demuestran su utilid
 
 * Cumplimiento del principio abierto/cerrado (Open/Closed Principle): La implementación del patrón facilita la adición de nuevos manejadores sin necesidad de modificar el código existente. Esto mejora la escalabilidad y mantenibilidad del sistema, permitiendo que evolucione sin introducir errores en el código que ya está funcionando.
 
-## Ejemplo Práctico de Código
+### Desventajas:
+
+* Puede ser difícil depurar y entender el flujo, especialmente si la cadena es larga y compleja.
+* La petición puede quedar sin gestionar si la cadena no incluye un gestor "catch-all".
+* Pueden surgir problemas de rendimiento debido a la posibilidad de pasar por varios 
+* gestores antes de encontrar el correcto, o no encontrarlo en absoluto.
+
+### Diagrama de clases
+
+![](https://java-design-patterns.com/assets/img/chain-of-responsibility.urm.1c5875a9.png)
+
+### Estructura
+
+![](https://upload.wikimedia.org/wikipedia/commons/1/1f/Chain_of_responsibility.jpg)
+
+
+### Ejemplo Práctico de Código.
 
 ```// Clase abstracta base
 abstract class Manejador {
