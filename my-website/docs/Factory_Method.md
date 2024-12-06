@@ -11,3 +11,15 @@ Las clases principales en este patrón son el creador y el producto. El objetivo
 En su lugar, las posibles subclases del creador son las que deben especificar qué tipos concretos (subclases) de productos se van a utilizar. De esta manera, el creador mantiene una independencia frente a los detalles específicos de los productos.
 
 ![](https://upload.wikimedia.org/wikipedia/commons/7/73/Factory_Method.png)
+
+Para lograr esto, se utiliza un método abstracto, llamado método de la fábrica, que se define en la clase creadora.
+* Este método abstracto está diseñado para devolver un producto.
+* Las subclases del creador sobrescriben este método para proporcionar instancias de las subclases específicas del producto que necesitan.
+
+Por ejemplo:
+
+* Si tienes una clase base llamada **_Creador_**, esta puede declarar un método abstracto como **_crearProducto()._**
+* Las subclases de **_Creador_**, como **_CreadorDeAutos_** o **_CreadorDeMotos_**, implementan **_crearProducto()_** para devolver instancias específicas de productos como Auto o Moto.
+De este modo, el patrón asegura que el creador puede generar productos de manera flexible y extensible, sin depender directamente de sus implementaciones concretas.
+
+De este modo, el patrón asegura que el creador puede generar productos de manera flexible y extensible, sin depender directamente de sus implementaciones concretas.
