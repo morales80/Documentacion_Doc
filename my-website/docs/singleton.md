@@ -95,3 +95,11 @@ configuracion2 = ConfiguracionApp.obtenerConfiguracion()
 // configuracion1 y configuracion2 son la misma instancia, se mantienen sincronizadas
 
 ```
+
+### Comparación con otros patrones de diseño
+
+* Singleton vs Factory Method:
+El patrón **Factory Method** se utiliza para crear objetos sin especificar la clase exacta del objeto que se va a crear. A diferencia del Singleton, que asegura una sola instancia de una clase, el Factory Method puede crear diferentes instancias, pero no garantiza que solo haya una.
+
+* Singleton vs Prototype:
+El patrón **Prototype** crea nuevos objetos copiando un objeto existente en lugar de crear instancias de una clase. A diferencia del Singleton, el Prototype puede generar múltiples instancias, lo que lo hace más flexible en ciertos casos, pero menos útil cuando solo se necesita una instancia única.
