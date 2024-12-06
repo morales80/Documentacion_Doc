@@ -1,4 +1,4 @@
-**También llamado:** Comando, Orden, Action, Transaction
+**También llamado:** _Comando, Orden, Action, Transaction_
 
 ### Propósito
 _El patrón de diseño ***Command*** pertenece a la categoría de comportamiento y consiste en encapsular una solicitud en un objeto independiente que almacena toda la información necesaria para ejecutarla. Esto permite que las solicitudes se puedan tratar como parámetros, programar su ejecución para más tarde o encolarlas, además de facilitar el manejo de operaciones que no pueden ejecutarse de inmediato._
