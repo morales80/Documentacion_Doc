@@ -146,3 +146,7 @@ Ten en cuenta que siempre podrás ajustar esta limitación y permitir la creaci�
 Muchos frameworks de prueba dependen de la herencia para crear objetos simulados (mock objects).
   - Debido a que la clase Singleton es privada y los métodos estáticos no se pueden sobrescribir en la mayoría de los lenguajes, realizar pruebas unitarias puede ser un desafío.
   - Esto podría implicar buscar formas originales de simular el Singleton, no escribir pruebas, o simplemente evitar usar este patrón.
+
+  
+>En general el Singleton es una herramienta poderosa para garantizar que una clase tenga una única instancia en todo el sistema, proporcionando un punto de acceso global a esta instancia. Aunque tiene ventajas claras, como la inicialización controlada y el acceso centralizado, también puede generar problemas de diseño y pruebas si no se utiliza correctamente. Su implementación debe ser cuidadosa, especialmente en entornos multihilo. Como cualquier patrón, es importante evaluar si su uso es necesario y adecuado para el contexto del proyecto.  
+
