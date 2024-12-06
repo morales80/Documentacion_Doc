@@ -135,21 +135,22 @@ class Application is
 
 ### Cómo implementarlo
 
-1. Repasa tu lógica de negocio e intenta dividirla en dos partes: la funcionalidad central, independiente del resto de código, actuará como notificador; el resto se convertirá en un grupo de clases suscriptoras.
+1. _Repasa tu lógica de negocio e intenta dividirla en dos partes: la funcionalidad central, independiente del resto de código, actuará como notificador; el resto se convertirá en un grupo de clases suscriptoras._
 
-2. Declara la interfaz suscriptora. Como mínimo, deberá declarar un único método actualizar.
+2. _Declara la interfaz suscriptora. Como mínimo, deberá declarar un único método actualizar._
 
-3. Declara la interfaz notificadora y describe un par de métodos para añadir y eliminar de la lista un objeto suscriptor. Recuerda que los notificadores deben trabajar con suscriptores únicamente a través de la interfaz suscriptora.
+3. _Declara la interfaz notificadora y describe un par de métodos para añadir y eliminar de la lista un objeto suscriptor. Recuerda que los notificadores deben trabajar con suscriptores únicamente a través de la interfaz suscriptora._
 
-4. Crea clases notificadoras concretas. Cada vez que suceda algo importante dentro de una notificadora, deberá notificar a todos sus suscriptores.
+4. _Crea clases notificadoras concretas. Cada vez que suceda algo importante dentro de una notificadora, deberá notificar a todos sus suscriptores._
 
 ![implementacion](https://th.bing.com/th/id/R.cf6415b099a82395399c3c8b57aa1940?rik=rGU9Bs47BwSNlg&pid=ImgRaw&r=0)
 
 ### Pros 
-- Principio de abierto/cerrado. Puedes introducir nuevas clases suscriptoras sin tener que cambiar el código de la notificadora (y viceversa si hay una interfaz notificadora).
+- _Principio de abierto/cerrado. Puedes introducir nuevas clases suscriptoras sin tener que cambiar el código de la notificadora (y viceversa si hay una interfaz notificadora)._
 
-- Puedes establecer relaciones entre objetos durante el tiempo de ejecución.
+- _Puedes establecer relaciones entre objetos durante el tiempo de ejecución._
 
  ### Contras
-- Los suscriptores son notificados en un orden aleatorio.
+- _Los suscriptores son notificados en un orden aleatorio._
+
 ![pros y contras](https://th.bing.com/th/id/R.2e07242a2094f7bfff7e7e8578067be7?rik=OFXf6sDZs6lvQQ&pid=ImgRaw&r=0)
