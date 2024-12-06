@@ -9,3 +9,5 @@ Este patrón es especialmente útil cuando se necesita evitar el uso directo del
 Las clases principales en este patrón son el creador y el producto. El objetivo principal es que el creador pueda generar instancias de productos sin depender directamente de los tipos concretos de estos. Esto significa que los detalles específicos de los productos no deben estar reflejados dentro del creador.
 
 En su lugar, las posibles subclases del creador son las que deben especificar qué tipos concretos (subclases) de productos se van a utilizar. De esta manera, el creador mantiene una independencia frente a los detalles específicos de los productos.
+
+![](https://upload.wikimedia.org/wikipedia/commons/7/73/Factory_Method.png)
