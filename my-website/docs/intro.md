@@ -117,7 +117,7 @@ Los patrones de diseño se utilizan ampliamente en proyectos de software reales 
 - **Observer:** En aplicaciones de redes sociales, donde los usuarios se suscriben a eventos o actualizaciones de otros usuarios (por ejemplo, recibir notificaciones cuando alguien publica una actualización).
 - **Decorator:** En sistemas de pago en línea, donde los métodos de pago pueden ser extendidos con funcionalidades adicionales (como descuentos, impuestos, opciones de envío) sin modificar las clases originales.
 
-### Errores Comunes al Implementar Patrones de Diseño
+### Errores Comunes al implementar Patrones de Diseño
 
 A la hora de implementar patrones de diseño, es importante evitar algunos errores comunes:
 
