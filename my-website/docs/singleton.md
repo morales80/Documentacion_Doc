@@ -36,3 +36,9 @@ Al ser un punto de acceso global, el uso de Singletons puede incrementar el acop
 
 * **Violación del principio de responsabilidad única:**
 El patrón Singleton puede violar el principio de responsabilidad única (SRP) de la programación orientada a objetos, ya que la clase no solo gestiona la instancia única, sino que también puede estar a cargo de una lógica adicional que la convierte en un "componente global" difícil de manejar.
+
+### Casos de uso comunes
+
+- Cuando se necesita acceder a una configuración común en toda la aplicación, el Singleton asegura que todos los componentes utilicen la misma instancia.
+- Para evitar múltiples conexiones simultáneas a una base de datos, el Singleton permite controlar una única instancia de la conexión.
+- En aplicaciones donde se necesita registrar información de eventos globalmente, el Singleton puede garantizar que se utilice una única instancia del sistema de logs.
