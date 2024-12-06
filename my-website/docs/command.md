@@ -201,4 +201,18 @@ class Application is
 - Crear comandos y asociarlos con receptores si es necesario.
 - Crear emisores y asociarlos con comandos específicos.
 
+## Pros
+
+- Principio de responsabilidad única. Puedes desacoplar las clases que invocan operaciones de las que realizan esas operaciones.
+
+- Principio de abierto/cerrado. Puedes introducir nuevos comandos en la aplicación sin descomponer el código cliente existente.
+
+- Puedes implementar deshacer/rehacer.
+
+- Puedes implementar la ejecución diferida de operaciones.
+ 
+- Puedes ensamblar un grupo de comandos simples para crear uno complejo.
+
+! [ventajas](https://www.techuseful.com/wp-content/uploads/2021/03/Pros-2048x1152.png)
+
 
