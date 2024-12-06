@@ -14,3 +14,14 @@ El patrón Singleton asegura que una clase tenga solo una instancia durante la e
 * En aplicaciones que operan en entornos multihilo, el patrón Singleton también implementa mecanismos de sincronización para garantizar que solo un hilo cree la instancia en simultáneo, evitando problemas de concurrencia.
 
 Este patrón es ideal cuando se necesita controlar recursos compartidos, como una conexión a base de datos o configuraciones globales, ya que asegura que solo haya una instancia accesible desde diferentes partes del sistema.
+
+## Ventajas del patrón Singleton
+
+* **Control de acceso único**
+El patrón garantiza que solo haya una instancia de la clase. Esto es particularmente útil cuando necesitas que ciertos recursos compartidos no sean duplicados, como en el caso de las conexiones a bases de datos o los registros de configuración.
+
+* **Flexibilidad**
+Aunque el Singleton asegura una única instancia, todavía permite que dicha instancia sea modificada y configurada según sea necesario, lo que otorga flexibilidad para cambiar el comportamiento de la instancia en el futuro.
+
+* **Fácil implementación**
+Implementar un Singleton es relativamente sencillo. Solo necesitas asegurarte de que la clase tenga un constructor privado y un método estático que devuelva la instancia única.
