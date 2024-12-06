@@ -51,3 +51,47 @@ El constructor de la clase Singleton debe estar oculto o privado, lo que impide 
 
 *Diagrama diagrama de patrón de diseño Singleton*
 ![Diagrama](https://refactoring.guru/images/patterns/diagrams/singleton/structure-en.png?id=4e4306d3a90f40d74c7a4d2d2506b8ec)
+
+### Pseudocódigo:
+
+En este caso, la clase ConfiguracionApp actúa como un Singleton. La clase no tiene un constructor público, por lo que la única manera de obtener su instancia es mediante el método obtenerConfiguracion. Este método asegura que la configuración sea una sola instancia que se mantenga constante durante la ejecución de la aplicación.
+
+```
+Clase ConfiguracionApp:
+    // Atributo privado estático para almacenar la instancia única
+    InstanciaPrivada: ConfiguracionApp
+    // Atributos para almacenar la configuración
+    AtributosDeConfiguracion: Mapa
+
+    // Constructor privado para prevenir la creación de instancias desde fuera
+    Método Constructor():
+        Si la instancia no es nula:
+            Lanzar excepción "Instancia ya existe"
+        FinSi
+        // Inicializar los atributos de configuración con valores predeterminados
+        AtributosDeConfiguracion = { "idioma": "español", "modo": "oscuro" }
+
+    // Método estático para obtener la instancia de la clase
+    Método obtenerConfiguracion():
+        Si la instancia es nula:
+            Crear nueva instancia de ConfiguracionApp
+        FinSi
+        Devolver la instancia
+
+    // Método para obtener un valor de configuración
+    Método obtenerValorConfiguracion(clave):
+        Devolver AtributosDeConfiguracion[clave]
+
+    // Método para actualizar la configuración
+    Método actualizarConfiguracion(clave, valor):
+        AtributosDeConfiguracion[clave] = valor
+FinClase
+
+// Uso del Singleton
+configuracion1 = ConfiguracionApp.obtenerConfiguracion()
+configuracion1.actualizarConfiguracion("idioma", "inglés")
+
+configuracion2 = ConfiguracionApp.obtenerConfiguracion()
+// configuracion1 y configuracion2 son la misma instancia, se mantienen sincronizadas
+
+```
