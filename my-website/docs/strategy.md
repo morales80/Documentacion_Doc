@@ -1,7 +1,7 @@
 
 **También llamado:** _Estrategia_
 
-### proposito
+### Proposito
 _El patrón de diseño *Strategy* es un enfoque de comportamiento que te permite crear un conjunto de algoritmos relacionados, encapsular cada uno en su propia clase y permitir que los objetos que los usan puedan cambiar dinámicamente entre ellos según sea necesario. Esto facilita la flexibilidad y el mantenimiento del código al separar la lógica de los algoritmos de la lógica del cliente._
 
 ![strategy](https://th.bing.com/th/id/R.06300a3d6e4e5aa943a8f69b052fa6ff?rik=AECDwYm%2f3bF2eA&pid=ImgRaw&r=0)
@@ -120,7 +120,7 @@ class ExampleApplication is
 
 ![ventajas](https://krative.digital/content/images/2023/06/Strategy-1.png)
 
-## contras
+## Contras
 
  1. _Si sólo tienes un par de algoritmos que raramente cambian, no hay una razón real para complicar el programa en exceso con nuevas clases e interfaces que vengan con el patrón._
 
