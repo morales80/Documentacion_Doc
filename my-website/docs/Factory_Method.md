@@ -58,8 +58,40 @@ La solución consiste en introducir un método abstracto, conocido como el méto
 **Sobrescritura en subclases:**
 * Las subclases del creador implementan este método abstracto, devolviendo instancias específicas de las subclases de los productos. De esta manera, se mantiene el principio de abierto/cerrado, ya que se pueden añadir nuevas subclases de productos y creadores sin modificar el código base existente.
 
+### Ejemplo Práctico de Código: Patrón Factory Method
 
+1. **_Definición de la Interfaz Producto_**
 
+Primero, definimos una interfaz común para los productos (vehículos):
 
+```
+from abc import ABC, abstractmethod
 
+class Vehiculo(ABC):
+    @abstractmethod
+    def conducir(self):
+        pass
+```
+2. **_Productos Concretos_**
+Ahora, creamos dos clases concretas que implementan la interfaz Vehiculo:
 
+```
+class Coche(Vehiculo):
+    def conducir(self):
+        return "Conduciendo un coche."
+
+class Motocicleta(Vehiculo):
+    def conducir(self):
+        return "Conduciendo una motocicleta."
+
+```
+3. **_Definición de la Clase Creador_**
+El creador es una clase base que define el método de fábrica, el cual es abstracto y debe ser implementado por las subclases concretas.
+
+```
+class Creador(ABC):
+    @abstractmethod
+    def crear_vehiculo(self) -> Vehiculo:
+        pass
+
+```
