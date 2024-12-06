@@ -109,6 +109,14 @@ Ejemplos de patrones de comportamiento:
 
 En esencia, los patrones de diseño no son recetas mágicas, sino herramientas poderosas que permiten escribir código de calidad profesional. Al aplicar estas soluciones probadas, los desarrolladores pueden enfrentar desafíos comunes con confianza, mejorar la colaboración en equipo y crear software robusto y escalable. Aprender a utilizarlos es un paso clave para evolucionar como programador y optimizar el proceso de desarrollo.
 
+### 4. Aplicaciones en Proyectos Reales
+
+Los patrones de diseño se utilizan ampliamente en proyectos de software reales para resolver problemas comunes de manera eficiente. Algunos ejemplos incluyen:
+
+- **Factory Method:** En sistemas de gestión de contenido (CMS), donde cada tipo de contenido (páginas, artículos, blogs) puede ser creado utilizando un método de fábrica, garantizando que se sigan las reglas y estructuras correctas.
+- **Observer:** En aplicaciones de redes sociales, donde los usuarios se suscriben a eventos o actualizaciones de otros usuarios (por ejemplo, recibir notificaciones cuando alguien publica una actualización).
+- **Decorator:** En sistemas de pago en línea, donde los métodos de pago pueden ser extendidos con funcionalidades adicionales (como descuentos, impuestos, opciones de envío) sin modificar las clases originales.
+
 
 
 
