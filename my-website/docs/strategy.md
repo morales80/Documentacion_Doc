@@ -95,4 +95,17 @@ class ExampleApplication is
         result = context.executeStrategy(First number, Second number)
 
         Print result.
-        
+
+## Cómo implementarlo
+
+- _En la clase contexto, identifica un algoritmo que tienda a sufrir cambios frecuentes. También puede ser un enorme condicional que seleccione y ejecute una variante del mismo algoritmo durante el tiempo de ejecución._
+
+- _Declara la interfaz estrategia común a todas las variantes del algoritmo._
+
+- _Uno a uno, extrae todos los algoritmos y ponlos en sus propias clases. Todas deben implementar la misma interfaz estrategia._
+
+- _Los clientes de la clase contexto deben asociarla con una estrategia adecuada que coincida con la forma en la que esperan que la clase contexto realice su trabajo principal._
+
+![implementación](https://th.bing.com/th/id/OIP.BSdPVU1Z7eNM5Gr_VF8hGgAAAA?rs=1&pid=ImgDetMain)
+
+
