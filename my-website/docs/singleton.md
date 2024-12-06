@@ -42,3 +42,10 @@ El patrón Singleton puede violar el principio de responsabilidad única (SRP) d
 - Cuando se necesita acceder a una configuración común en toda la aplicación, el Singleton asegura que todos los componentes utilicen la misma instancia.
 - Para evitar múltiples conexiones simultáneas a una base de datos, el Singleton permite controlar una única instancia de la conexión.
 - En aplicaciones donde se necesita registrar información de eventos globalmente, el Singleton puede garantizar que se utilice una única instancia del sistema de logs.
+
+### Estructura
+
+En el patrón Singleton, la clase declara un método estático **_getInstance()_**, el cual se utiliza para obtener la única instancia de la clase. La idea principal es que solo haya una instancia de la clase en todo el sistema, y la forma de acceder a esta instancia es a través de este método estático.
+
+El constructor de la clase Singleton debe estar oculto o privado, lo que impide que otros objetos o clases creen nuevas instancias de la clase directamente. De esta manera, la única forma de acceder al objeto Singleton es llamando al método getInstance(). Este método garantiza que solo se cree una instancia de la clase y que se reutilice esta instancia siempre que sea necesario.
+
