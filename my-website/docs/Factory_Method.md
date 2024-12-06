@@ -4,6 +4,26 @@ El Factory Method es un patrón de diseño creacional que define una interfaz en
 
 Este patrón es especialmente útil cuando se necesita evitar el uso directo del operador new y se desea mantener el código abierto a extensiones pero cerrado a modificaciones, cumpliendo con el principio Open/Closed de SOLID.
 
+### ¿Cómo Funciona?
+
+El patrón Factory Method delega la creación de objetos a las subclases del creador, asegurando que el creador no dependa de las clases concretas de los productos. Esto se logra a través de un método abstracto, que actúa como una "fábrica" para producir los objetos requeridos.
+
+Es decir el creador no debe conocer los detalles específicos de los tipos de productos que crea. En su lugar, las subclases del creador son las responsables de definir los tipos concretos de los productos que se generarán.  
+
+### ¿Cuál es la solución?
+
+Este patrón resuelve el problema de desacoplar la creación de objetos concretos de su uso.
+
+El problema central es que, en un diseño tradicional, el código del cliente (o usuario del objeto) a menudo está directamente vinculado a las clases concretas que necesita instanciar. Esto puede generar rigidez en el código, dificultar la introducción de nuevas variantes de productos y violar principios como el de abierto/cerrado (extender sin modificar).
+
+La solución consiste en introducir un método abstracto, conocido como el método de la fábrica, dentro de la clase creadora.
+
+**Método abstracto:**
+* Este método se declara en la clase base del creador como un contrato (abstracto), lo que significa que no tiene una implementación en esta clase base.
+
+**Sobrescritura en subclases:**
+* Las subclases del creador implementan este método abstracto, devolviendo instancias específicas de las subclases de los productos. De esta manera, se mantiene el principio de abierto/cerrado, ya que se pueden añadir nuevas subclases de productos y creadores sin modificar el código base existente.
+
 ### Ventajas del Patrón
 
 * **_Desacoplamiento:_**
@@ -45,26 +65,6 @@ Por ejemplo:
 De este modo, el patrón asegura que el creador puede generar productos de manera flexible y extensible, sin depender directamente de sus implementaciones concretas.
 
 De este modo, el patrón asegura que el creador puede generar productos de manera flexible y extensible, sin depender directamente de sus implementaciones concretas.
-
-### ¿Cómo Funciona?
-
-El patrón Factory Method delega la creación de objetos a las subclases del creador, asegurando que el creador no dependa de las clases concretas de los productos. Esto se logra a través de un método abstracto, que actúa como una "fábrica" para producir los objetos requeridos.
-
-Es decir el creador no debe conocer los detalles específicos de los tipos de productos que crea. En su lugar, las subclases del creador son las responsables de definir los tipos concretos de los productos que se generarán.  
-
-### ¿Cuál es la solución?
-
-Este patrón resuelve el problema de desacoplar la creación de objetos concretos de su uso.
-
-El problema central es que, en un diseño tradicional, el código del cliente (o usuario del objeto) a menudo está directamente vinculado a las clases concretas que necesita instanciar. Esto puede generar rigidez en el código, dificultar la introducción de nuevas variantes de productos y violar principios como el de abierto/cerrado (extender sin modificar).
-
-La solución consiste en introducir un método abstracto, conocido como el método de la fábrica, dentro de la clase creadora.
-
-**Método abstracto:**
-* Este método se declara en la clase base del creador como un contrato (abstracto), lo que significa que no tiene una implementación en esta clase base.
-
-**Sobrescritura en subclases:**
-* Las subclases del creador implementan este método abstracto, devolviendo instancias específicas de las subclases de los productos. De esta manera, se mantiene el principio de abierto/cerrado, ya que se pueden añadir nuevas subclases de productos y creadores sin modificar el código base existente.
 
 ### Ejemplo Práctico de Código: Patrón Factory Method
 
@@ -132,3 +132,12 @@ creador_moto = CreadorMotocicleta()
 cliente(creador_moto)  # Conduciendo una motocicleta.
 
 ```
+### Comparaciones con otros patrones
+
+El patrón Factory Method se diferencia de otros patrones como el Abstract Factory y el Singleton en los siguientes aspectos:
+
+* **_Abstract Factory:_** Se utiliza cuando necesitas crear familias de objetos relacionados, mientras que Factory Method se enfoca en la creación de un solo tipo de objeto.
+
+* **_Singleton:_** A diferencia del Factory Method, que puede generar varias instancias de un producto, el Singleton asegura que solo haya una instancia de una clase en todo el sistema.
+
+Cada patrón tiene su caso de uso específico, dependiendo de la flexibilidad y los requisitos del sistema.
