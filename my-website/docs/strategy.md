@@ -28,7 +28,7 @@ _Imagina que estás eligiendo cómo cocinar un huevo. Puedes freírlo, hervirlo 
 ## Pseudocódigo
 _En este ejemplo, el contexto utiliza varias estrategias para ejecutar diversas operaciones aritméticas._
 
-// La interfaz estrategia declara operaciones comunes a todas
+```// La interfaz estrategia declara operaciones comunes a todas
 // las versiones soportadas de algún algoritmo. El contexto
 // utiliza esta interfaz para invocar el algoritmo definido por
 // las estrategias concretas.
@@ -95,7 +95,7 @@ class ExampleApplication is
         result = context.executeStrategy(First number, Second number)
 
         Print result.
-
+```
 ## Cómo implementarlo
 
 - _En la clase contexto, identifica un algoritmo que tienda a sufrir cambios frecuentes. También puede ser un enorme condicional que seleccione y ejecute una variante del mismo algoritmo durante el tiempo de ejecución._
