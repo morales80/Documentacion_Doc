@@ -15,7 +15,7 @@ El patrón Singleton asegura que una clase tenga solo una instancia durante la e
 
 Este patrón es ideal cuando se necesita controlar recursos compartidos, como una conexión a base de datos o configuraciones globales, ya que asegura que solo haya una instancia accesible desde diferentes partes del sistema.
 
-## Ventajas del patrón Singleton
+### Ventajas del patrón Singleton
 
 * **Control de acceso único**
 El patrón garantiza que solo haya una instancia de la clase. Esto es particularmente útil cuando necesitas que ciertos recursos compartidos no sean duplicados, como en el caso de las conexiones a bases de datos o los registros de configuración.
@@ -25,3 +25,14 @@ Aunque el Singleton asegura una única instancia, todavía permite que dicha ins
 
 * **Fácil implementación**
 Implementar un Singleton es relativamente sencillo. Solo necesitas asegurarte de que la clase tenga un constructor privado y un método estático que devuelva la instancia única.
+
+### Desventajas del patrón Singleton
+
+* **Difícil de probar:**
+Los Singletons pueden dificultar las pruebas unitarias. Dado que son globales y la instancia está controlada dentro de la propia clase, puede ser complicado realizar pruebas aisladas sin que afecte el estado global de la aplicación.
+
+* **Acoplamiento alto:**
+Al ser un punto de acceso global, el uso de Singletons puede incrementar el acoplamiento entre las clases, ya que las clases que lo usan dependen de una instancia global. Esto puede generar problemas si no se gestiona adecuadamente, ya que se pueden crear dependencias difíciles de controlar.
+
+* **Violación del principio de responsabilidad única:**
+El patrón Singleton puede violar el principio de responsabilidad única (SRP) de la programación orientada a objetos, ya que la clase no solo gestiona la instancia única, sino que también puede estar a cargo de una lógica adicional que la convierte en un "componente global" difícil de manejar.
