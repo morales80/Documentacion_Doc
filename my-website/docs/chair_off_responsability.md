@@ -104,4 +104,12 @@ class Cliente {
         manejadorA.manejar("C");
     }
 }
+```
 
+### Comparación del patrón Chain of Responsibility con otros patrones:
+ 
+ - **Chain of Responsibility vs. Command**: Ambos patrones permiten el envío de solicitudes a un objeto que las maneja. Sin embargo, en el patrón Command, las solicitudes son encapsuladas como objetos y se envían a un invocador para su ejecución. En cambio, en Chain of Responsibility, las solicitudes se pasan a través de una cadena de objetos hasta que uno de ellos las maneja, sin necesidad de encapsular la solicitud.
+ 
+- **Chain of Responsibility vs. Observer**: Mientras que Chain of Responsibility se enfoca en la forma de delegar la responsabilidad de manejar una solicitud a un conjunto de objetos, Observer se usa para notificar a un conjunto de objetos sobre cambios en el estado de un objeto. Aunque ambos patrones usan la delegación, el Observer se centra más en la notificación de eventos, mientras que Chain of Responsibility maneja la solicitud de manera jerárquica.
+ 
+- **Chain of Responsibility vs. Strategy**: En Strategy, un objeto delega su comportamiento a un objeto de estrategia, el cual puede ser cambiado en tiempo de ejecución. En Chain of Responsibility, los objetos están encadenados y la solicitud se maneja por el primer objeto que pueda procesarla, sin necesidad de cambiar el comportamiento de los objetos en tiempo de ejecución. 
