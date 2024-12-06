@@ -40,7 +40,7 @@ _Los comandos que modifican el estado del editor, como cortar y pegar, primero g
 
 _El cliente, como los elementos de la interfaz gráfica o el historial de comandos, no depende de implementaciones específicas de comandos. En su lugar, interactúa con ellos a través de una interfaz común. Esto permite agregar nuevos comandos a la aplicación sin afectar el código existente, manteniendo el diseño flexible y fácil de extender._
 
-````// La clase base comando define la interfaz común a todos los
+```// La clase base comando define la interfaz común a todos los
 // comandos concretos.
 abstract class Command is
     protected field app: Application
