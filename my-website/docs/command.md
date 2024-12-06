@@ -185,6 +185,6 @@ class Application is
 
 - **Utiliza el patrón Command cuando quieras implementar operaciones reversibles.**
 
-## Cómo implementarlo
+
 
 
