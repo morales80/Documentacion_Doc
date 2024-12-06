@@ -87,3 +87,19 @@ Ejemplos de patrones estructurales:
 * **Composite:** Facilita el trabajo con objetos jerárquicos al tratarlos de manera uniforme.
 * **Flyweight:** Optimiza el uso de recursos compartiendo objetos similares para reducir el consumo de memoria.
 * **Proxy:** Introduce un intermediario que controla el acceso a un objeto, útil por razones de seguridad o complejidad.
+
+#### 3. Patrones de Comportamiento
+Resuelven problemas relacionados con la interacción y las responsabilidades de las clases y objetos, mejorando la comunicación entre ellos.
+
+Ejemplos de patrones de comportamiento:
+
+* **Observer (Observador):** Establece un sistema de notificaciones entre objetos, donde uno informa a varios de sus cambios.
+* **Chain of Responsibility:** Organiza objetos en cadena para manejar solicitudes, donde cada objeto decide si actúa o pasa la solicitud.
+* **Command:** Encapsula acciones como objetos, permitiendo su ejecución y almacenamiento para uso posterior.
+* **Iterator:** Proporciona una manera uniforme de recorrer colecciones de objetos.
+* **Mediator:** Centraliza la comunicación entre objetos, reduciendo sus dependencias mutuas.
+* **Memento:** Permite guardar y restaurar estados anteriores de un objeto.
+* **State:** Modifica el comportamiento de un objeto en función de su estado interno.
+* **Strategy:** Define una familia de algoritmos, permitiendo elegir uno dinámicamente según las necesidades.
+* **Template Method:** Proporciona una estructura para resolver problemas reutilizando pasos comunes.
+* **Visitor:** Permite definir operaciones nuevas sin modificar las estructuras de datos subyacentes.
