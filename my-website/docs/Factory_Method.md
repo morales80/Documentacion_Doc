@@ -95,3 +95,32 @@ class Creador(ABC):
         pass
 
 ```
+4. **_Creadores Concretos**_
+Las subclases del creador implementan el método de fábrica para crear productos específicos.
+
+```
+class CreadorCoche(Creador):
+    def crear_vehiculo(self) -> Vehiculo:
+        return Coche()
+
+class CreadorMotocicleta(Creador):
+    def crear_vehiculo(self) -> Vehiculo:
+        return Motocicleta()
+
+```
+
+5. **_Uso del Cliente_**
+El cliente interactúa con los creadores y obtiene el producto sin preocuparse por su creación.
+```
+def cliente(creator: Creador):
+    vehiculo = creator.crear_vehiculo()
+    print(vehiculo.conducir())
+
+# Creando diferentes tipos de vehículos
+creador_coche = CreadorCoche()
+cliente(creador_coche)  # Conduciendo un coche.
+
+creador_moto = CreadorMotocicleta()
+cliente(creador_moto)  # Conduciendo una motocicleta.
+
+```
