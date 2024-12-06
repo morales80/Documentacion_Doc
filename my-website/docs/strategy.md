@@ -108,4 +108,16 @@ class ExampleApplication is
 
 ![implementación](https://th.bing.com/th/id/OIP.BSdPVU1Z7eNM5Gr_VF8hGgAAAA?rs=1&pid=ImgDetMain)
 
+## Pros
+ - Puedes intercambiar algoritmos usados dentro de un objeto durante el tiempo de ejecución.
+
+ - Puedes aislar los detalles de implementación de un algoritmo del código que lo utiliza.
+
+ - Puedes sustituir la herencia por composición.
+
+ - Principio de abierto/cerrado. Puedes introducir nuevas estrategias sin tener que cambiar el contexto.
+
+![ventajas](https://krative.digital/content/images/2023/06/Strategy-1.png)
+
+
 
