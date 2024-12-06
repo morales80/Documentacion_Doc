@@ -109,7 +109,7 @@ Ejemplos de patrones de comportamiento:
 
 En esencia, los patrones de diseño no son recetas mágicas, sino herramientas poderosas que permiten escribir código de calidad profesional. Al aplicar estas soluciones probadas, los desarrolladores pueden enfrentar desafíos comunes con confianza, mejorar la colaboración en equipo y crear software robusto y escalable. Aprender a utilizarlos es un paso clave para evolucionar como programador y optimizar el proceso de desarrollo.
 
-### 4. Aplicaciones en Proyectos Reales
+### Aplicaciones en Proyectos Reales
 
 Los patrones de diseño se utilizan ampliamente en proyectos de software reales para resolver problemas comunes de manera eficiente. Algunos ejemplos incluyen:
 
@@ -117,6 +117,13 @@ Los patrones de diseño se utilizan ampliamente en proyectos de software reales 
 - **Observer:** En aplicaciones de redes sociales, donde los usuarios se suscriben a eventos o actualizaciones de otros usuarios (por ejemplo, recibir notificaciones cuando alguien publica una actualización).
 - **Decorator:** En sistemas de pago en línea, donde los métodos de pago pueden ser extendidos con funcionalidades adicionales (como descuentos, impuestos, opciones de envío) sin modificar las clases originales.
 
+### Errores Comunes al Implementar Patrones de Diseño
+
+A la hora de implementar patrones de diseño, es importante evitar algunos errores comunes:
+
+- **Sobrecarga de patrones:** Usar patrones innecesarios cuando una solución más simple es suficiente. No es necesario aplicar un patrón solo por el hecho de usar uno.
+- **Patrones mal aplicados:** Implementar un patrón sin comprender sus beneficios o sin tener en cuenta el contexto puede resultar en un diseño innecesariamente complejo.
+- **No adaptar los patrones:** Aplicar un patrón de manera rígida sin considerar el contexto específico del proyecto puede generar un diseño ineficiente.
 
 
 
