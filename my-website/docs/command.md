@@ -18,21 +18,19 @@ _La orden de servicio actúa como un comando, ya que contiene toda la informaci�
 ## Estructura
 ![Estructura](https://refactoring.guru/images/patterns/diagrams/command/structure-indexed.png?id=95529d7282dc7bc1c5bc443423b1cf4f)
 
-1. La clase ***Emisora*** (o invocadora) es quien se encarga de iniciar las acciones solicitadas. En lugar de ejecutar la acción directamente, esta clase mantiene una referencia a un objeto de comando que contiene los detalles de la solicitud. Cuando se necesita realizar la acción, la emisora simplemente activa el comando, delegando la tarea. Es importante destacar que la emisora no se encarga de crear los comandos; en su lugar, estos suelen ser proporcionados por el cliente, por ejemplo, al pasarle el comando ya preparado como un parámetro en el constructor.
+1. _La clase ***Emisora*** (o invocadora) es quien se encarga de iniciar las acciones solicitadas. En lugar de ejecutar la acción directamente, esta clase mantiene una referencia a un objeto de comando que contiene los detalles de la solicitud. Cuando se necesita realizar la acción, la emisora simplemente activa el comando, delegando la tarea. Es importante destacar que la emisora no se encarga de crear los comandos; en su lugar, estos suelen ser proporcionados por el cliente, por ejemplo, al pasarle el comando ya preparado como un parámetro en el constructor._
 
-2. La interfaz ***Comando*** generalmente define un único método cuya función es ejecutar la acción correspondiente al comando. Este método sirve como punto de entrada para llevar a cabo la tarea asociada al comando.
+2. _La interfaz ***Comando*** generalmente define un único método cuya función es ejecutar la acción correspondiente al comando. Este método sirve como punto de entrada para llevar a cabo la tarea asociada al comando._
 
-3. Los ***Comandos Concretos*** son responsables de representar diferentes tipos de solicitudes específicas. No realizan directamente las acciones, sino que delegan la ejecución al objeto encargado de la lógica de negocio. Sin embargo, en algunos casos, para simplificar el diseño, estas clases pueden combinarse con la lógica que ejecutan.  
+3. _Los ***Comandos Concretos*** son responsables de representar diferentes tipos de solicitudes específicas. No realizan directamente las acciones, sino que delegan la ejecución al objeto encargado de la lógica de negocio. Sin embargo, en algunos casos, para simplificar el diseño, estas clases pueden combinarse con la lógica que ejecutan.Los datos necesarios para ejecutar una solicitud se pueden almacenar como atributos en el comando concreto, y para garantizar que no cambien, estos atributos suelen inicializarse únicamente a través del constructor, haciendo que el comando sea inmutable._
 
-Los datos necesarios para ejecutar una solicitud se pueden almacenar como atributos en el comando concreto, y para garantizar que no cambien, estos atributos suelen inicializarse únicamente a través del constructor, haciendo que el comando sea inmutable.
+4. _La clase ***Receptora*** es la que contiene la lógica principal para ejecutar las tareas. Prácticamente cualquier objeto puede desempeñar el papel de receptor. En este patrón, los comandos se encargan principalmente de manejar los detalles de cómo se envía la solicitud al receptor, pero es este último quien realiza el trabajo real._
 
-4. La clase ***Receptora*** es la que contiene la lógica principal para ejecutar las tareas. Prácticamente cualquier objeto puede desempeñar el papel de receptor. En este patrón, los comandos se encargan principalmente de manejar los detalles de cómo se envía la solicitud al receptor, pero es este último quien realiza el trabajo real.
-
-5. El ***Cliente*** crea y configura los objetos de comando concretos. El cliente debe pasar todos los parámetros de la solicitud, incluyendo una instancia del receptor, dentro del constructor del comando. Después de eso, el comando resultante puede asociarse con uno o varios emisores.
+5. _El ***Cliente*** crea y configura los objetos de comando concretos. El cliente debe pasar todos los parámetros de la solicitud, incluyendo una instancia del receptor, dentro del constructor del comando. Después de eso, el comando resultante puede asociarse con uno o varios emisores._
 
 ## Pseudocódigo
 
-En este ejemplo, el patrón ***Command*** ayuda a rastrear el historial de operaciones ejecutadas y hace posible revertir una operación si es necesario.
+_En este ejemplo, el patrón ***Command*** ayuda a rastrear el historial de operaciones ejecutadas y hace posible revertir una operación si es necesario._
 
 ![Operaciones que no se pueden realizar en un editor de texto.](https://refactoring.guru/images/patterns/diagrams/command/example.png?id=1f42c8395fe54d0e409026b91881e2a0)
 
@@ -176,26 +174,26 @@ class Application is
         command = history.pop()
         if (command != null)
             command.undo()
-
+```
 ## Aplicabilidad
 
-- Utiliza el patrón Command cuando quieras parametrizar objetos con operaciones.
+- _Utiliza el patrón Command cuando quieras parametrizar objetos con operaciones._
 
-- Utiliza el patrón Command cuando quieras poner operaciones en cola, programar su ejecución, o ejecutarlas de forma remota.
+- _Utiliza el patrón Command cuando quieras poner operaciones en cola, programar su ejecución, o ejecutarlas de forma remota._
 
-- Utiliza el patrón Command cuando quieras implementar operaciones reversibles.
+- _Utiliza el patrón Command cuando quieras implementar operaciones reversibles._
 
 ## Cómo implementarlo
 
-1. Declara la interfaz de comando con un único método de ejecución.
+1. _Declara la interfaz de comando con un único método de ejecución._
 
-2. Empieza extrayendo solicitudes y poniéndolas dentro de clases concretas de comando que implementen la interfaz de comando. Cada clase debe contar con un grupo de campos para almacenar los argumentos de las solicitudes junto con referencias al objeto receptor. Todos estos valores deben inicializarse a través del constructor del comando.
+2. _Empieza extrayendo solicitudes y poniéndolas dentro de clases concretas de comando que implementen la interfaz de comando. Cada clase debe contar con un grupo de campos para almacenar los argumentos de las solicitudes junto con referencias al objeto receptor. Todos estos valores deben inicializarse a través del constructor del comando._
 
-3. Identifica clases que actúen como emisoras. Añade los campos para almacenar comandos dentro de estas clases. Las emisoras deberán comunicarse con sus comandos tan solo a través de la interfaz de comando. Normalmente las emisoras no crean objetos de comando por su cuenta, sino que los obtienen del código cliente.
+3. _Identifica clases que actúen como emisoras. Añade los campos para almacenar comandos dentro de estas clases. Las emisoras deberán comunicarse con sus comandos tan solo a través de la interfaz de comando. Normalmente las emisoras no crean objetos de comando por su cuenta, sino que los obtienen del código cliente._
 
-4. Cambia las emisoras de forma que ejecuten el comando en lugar de enviar directamente una solicitud al receptor.
+4. _Cambia las emisoras de forma que ejecuten el comando en lugar de enviar directamente una solicitud al receptor._
 
-5. El cliente debe inicializar objetos en el siguiente orden:
+5. _El cliente debe inicializar objetos en el siguiente orden:_
 
 - Crear receptores.
 - Crear comandos y asociarlos con receptores si es necesario.
@@ -203,21 +201,21 @@ class Application is
 
 ## Pros
 
-- Principio de responsabilidad única. Puedes desacoplar las clases que invocan operaciones de las que realizan esas operaciones.
+- _Principio de responsabilidad única. Puedes desacoplar las clases que invocan operaciones de las que realizan esas operaciones._
 
-- Principio de abierto/cerrado. Puedes introducir nuevos comandos en la aplicación sin descomponer el código cliente existente.
+- Principio de abierto/cerrado. Puedes introducir nuevos comandos en la aplicación sin descomponer el código cliente existente._
 
-- Puedes implementar deshacer/rehacer.
+- _Puedes implementar deshacer/rehacer._
 
-- Puedes implementar la ejecución diferida de operaciones.
+- _Puedes implementar la ejecución diferida de operaciones._
  
-- Puedes ensamblar un grupo de comandos simples para crear uno complejo.
+- _Puedes ensamblar un grupo de comandos simples para crear uno complejo._
 
 ! [ventajas](https://www.techuseful.com/wp-content/uploads/2021/03/Pros-2048x1152.png)
 
 
 ## Contras
 
-- El código puede complicarse, ya que estás introduciendo una nueva capa entre emisores y receptores.
+- _El código puede complicarse, ya que estás introduciendo una nueva capa entre emisores y receptores._
 
 ![desventajas](https://th.bing.com/th/id/OIP.e_suX-k3dtM20PJ07fwNfQHaHa?rs=1&pid=ImgDetMain)
