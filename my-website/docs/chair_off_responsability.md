@@ -25,6 +25,12 @@ Por ejemplo, en el caso del scoring de un pedido, se pueden identificar varios p
 
 La aplicación del patrón permite que cada paso del proceso se separe en distintas clases, donde cada clase tiene una única responsabilidad. De esta manera, el pedido o solicitud puede ser procesado a través de una cadena de manejadores, que se encargan de evaluar y aplicar cada paso hasta obtener un resultado final. Esto no solo mejora la organización del código, sino que también facilita su expansión y mantenimiento a medida que se agregan nuevas verificaciones o condiciones.
 
+### ¿Cómo implementar el patrón?
+
+Al igual que muchos otros patrones de diseño de comportamiento, la implementación del patrón Chain of Responsibility se basa en transformar comportamientos específicos en objetos independientes denominados Handlers. Cada verificación dentro del proceso debe extraerse a su propia clase, la cual contará con un único método encargado de realizar la acción correspondiente. La solicitud, junto con sus datos y contexto, se pasa como argumento a este método, lo que permite iniciar la cadena de responsabilidad.
+
+Existen múltiples ejemplos de implementaciones de este patrón, y se puede adaptar a una amplia variedad de contextos. Al final del artículo, se incluirá un ejemplo concreto de implementación del patrón en ES6, para ilustrar cómo aplicar este enfoque de manera práctica.
+
 ## Ejemplo Práctico de Código
 
 ```// Clase abstracta base
