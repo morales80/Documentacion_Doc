@@ -216,3 +216,8 @@ class Application is
 ! [ventajas](https://www.techuseful.com/wp-content/uploads/2021/03/Pros-2048x1152.png)
 
 
+## Contras
+
+- El código puede complicarse, ya que estás introduciendo una nueva capa entre emisores y receptores.
+
+![desventajas](https://th.bing.com/th/id/OIP.e_suX-k3dtM20PJ07fwNfQHaHa?rs=1&pid=ImgDetMain)
