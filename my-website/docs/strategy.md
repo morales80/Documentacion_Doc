@@ -126,7 +126,7 @@ class ExampleApplication is
 
  2. _Los clientes deben conocer las diferencias entre estrategias para poder seleccionar la adecuada._
 
- 3. _Muchos lenguajes de programación modernos tienen un soporte de tipo funcional que te permite implementar distintas versiones de un algoritmo dentro de un grupo de funciones anónimas. _
+ 3. _Muchos lenguajes de programación modernos tienen un soporte de tipo funcional que te permite implementar distintas versiones de un algoritmo dentro de un grupo de funciones anónimas. 
  Entonces puedes utilizar estas funciones exactamente como habrías utilizado los objetos de estrategia, pero sin saturar tu código con clases e interfaces adicionales._
 
 ![desventajas](https://media.istockphoto.com/vectors/like-and-dislike-icons-set-thumb-up-symbol-finger-up-icon-like-and-vector-id1158443058?k=20&m=1158443058&s=170667a&w=0&h=MFgFP-4y4KmKgxOml7rp7EiSH4W6bRvN7Uh4zINfze0=)
