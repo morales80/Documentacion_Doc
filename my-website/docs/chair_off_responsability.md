@@ -2,6 +2,8 @@
 
 El patrón **Chain of Responsibility** es una solución de diseño que aborda la distribución dinámica de responsabilidades en sistemas complejos. Este enfoque permite procesar solicitudes mediante una cadena de manejadores, donde cada uno evalúa si puede resolver el problema o pasarlo al siguiente elemento en la secuencia. Este modelo fomenta el desacoplamiento entre los emisores y receptores de solicitudes, mejorando la flexibilidad y modularidad del código. En esta introducción exploraremos cómo funciona este patrón, su utilidad en la programación y ejemplos prácticos para entender su implementación y ventajas.
 
+![](https://refactoring.guru/images/patterns/content/chain-of-responsibility/chain-of-responsibility-comic-1-es.png?id=a57afa94531c4b0395559c4d2d675967)
+
 ### ¿Cómo Funciona?
 
 **Cuando se recibe una solicitud, cada manejador:**
