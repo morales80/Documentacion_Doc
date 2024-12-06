@@ -211,7 +211,7 @@ class Application is
  
 - _Puedes ensamblar un grupo de comandos simples para crear uno complejo._
 
-! [ventajas](https://global-uploads.webflow.com/5e38f1a8e654dab96f303972/6101804be1c8822568372e45_Ventajas-y-desventajas_MAIN.jpg)
+! [ventajas](https://www.livebeep.com/web/wp1/wp-content/uploads/2023/01/Diseno-sin-titulo-33.jpg)
 
 
 ## Contras
