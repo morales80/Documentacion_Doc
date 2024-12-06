@@ -29,9 +29,18 @@ La aplicación del patrón permite que cada paso del proceso se separe en distin
 
 Al igual que muchos otros patrones de diseño de comportamiento, la implementación del patrón Chain of Responsibility se basa en transformar comportamientos específicos en objetos independientes denominados Handlers. Cada verificación dentro del proceso debe extraerse a su propia clase, la cual contará con un único método encargado de realizar la acción correspondiente. La solicitud, junto con sus datos y contexto, se pasa como argumento a este método, lo que permite iniciar la cadena de responsabilidad.
 
-![Texto alternativo](https://miro.medium.com/v2/resize:fit:828/format:webp/0*7PGB4poMp_-feEy2.png)
+![](https://miro.medium.com/v2/resize:fit:828/format:webp/0*7PGB4poMp_-feEy2.png)
 
 Existen múltiples ejemplos de implementaciones de este patrón, y se puede adaptar a una amplia variedad de contextos. Al final del artículo, se incluirá un ejemplo concreto de implementación del patrón en ES6, para ilustrar cómo aplicar este enfoque de manera práctica.
+
+### Ventajas del uso del patrón
+Una vez implementado el patrón, surgen varias ventajas que demuestran su utilidad. Es importante preguntarse si la jerarquía de clases creada para aplicarlo realmente aporta beneficios. A continuación, se detallan las principales ventajas del patrón Chain of Responsibility y los principios SOLID que se cumplen al utilizarlo:
+
+* Control del orden de los pasos: El patrón permite gestionar el orden de ejecución de los pasos de manera dinámica, lo que facilita la modificación del flujo de trabajo sin afectar otras partes del sistema.
+
+* Cumplimiento del principio de responsabilidad única (Single Responsibility Principle): El patrón desacopla la invocación de las operaciones y la ejecución de las acciones en clases separadas. Esto facilita la prueba de cada acción de manera aislada, mejorando la mantenibilidad y claridad del código.
+
+* Cumplimiento del principio abierto/cerrado (Open/Closed Principle): La implementación del patrón facilita la adición de nuevos manejadores sin necesidad de modificar el código existente. Esto mejora la escalabilidad y mantenibilidad del sistema, permitiendo que evolucione sin introducir errores en el código que ya está funcionando.
 
 ## Ejemplo Práctico de Código
 
