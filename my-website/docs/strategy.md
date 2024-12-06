@@ -115,10 +115,19 @@ class ExampleApplication is
  2. Puedes aislar los detalles de implementación de un algoritmo del código que lo utiliza.
 
  3. Puedes sustituir la herencia por composición.
- 
+
  4. Principio de abierto/cerrado. Puedes introducir nuevas estrategias sin tener que cambiar el contexto.
 
 ![ventajas](https://krative.digital/content/images/2023/06/Strategy-1.png)
 
+## contras
 
+ 1. Si sólo tienes un par de algoritmos que raramente cambian, no hay una razón real para complicar el programa en exceso con nuevas clases e interfaces que vengan con el patrón.
+
+ 2. Los clientes deben conocer las diferencias entre estrategias para poder seleccionar la adecuada.
+
+ 3. Muchos lenguajes de programación modernos tienen un soporte de tipo funcional que te permite implementar distintas versiones de un algoritmo dentro de un grupo de funciones anónimas. 
+ Entonces puedes utilizar estas funciones exactamente como habrías utilizado los objetos de estrategia, pero sin saturar tu código con clases e interfaces adicionales.
+
+![desventajas](https://media.istockphoto.com/vectors/like-and-dislike-icons-set-thumb-up-symbol-finger-up-icon-like-and-vector-id1158443058?k=20&m=1158443058&s=170667a&w=0&h=MFgFP-4y4KmKgxOml7rp7EiSH4W6bRvN7Uh4zINfze0=)
 
