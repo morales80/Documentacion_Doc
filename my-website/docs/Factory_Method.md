@@ -52,6 +52,7 @@ Las clases principales en este patrón son el creador y el producto. El objetivo
 
 En su lugar, las posibles subclases del creador son las que deben especificar qué tipos concretos (subclases) de productos se van a utilizar. De esta manera, el creador mantiene una independencia frente a los detalles específicos de los productos.
 
+*diagrama del patrón de diseño Factory Method*
 ![diagrama del patrón de diseño Factory Method](https://upload.wikimedia.org/wikipedia/commons/7/73/Factory_Method.png)
 
 Para lograr esto, se utiliza un método abstracto, llamado método de la fábrica, que se define en la clase creadora.
