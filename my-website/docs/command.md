@@ -179,9 +179,12 @@ class Application is
 
 ## Aplicabilidad
 
-- ***Utiliza el patrón Command cuando quieras parametrizar objetos con operaciones.***
+- **Utiliza el patrón Command cuando quieras parametrizar objetos con operaciones.**
 
-- ***Utiliza el patrón Command cuando quieras poner operaciones en cola, programar su ejecución, o ejecutarlas de forma remota.***
+- **Utiliza el patrón Command cuando quieras poner operaciones en cola, programar su ejecución, o ejecutarlas de forma remota.**
 
-- ***Utiliza el patrón Command cuando quieras implementar operaciones reversibles.***
+- **Utiliza el patrón Command cuando quieras implementar operaciones reversibles.**
+
+## Cómo implementarlo
+
 
