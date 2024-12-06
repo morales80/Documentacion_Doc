@@ -13,3 +13,61 @@ El patrón **Chain of Responsibility** es una solución de diseño que aborda la
 Las responsabilidades están distribuidas jerárquicamente.
 El manejo de solicitudes debe adaptarse dinámicamente.
 Se busca desacoplar emisores y receptores para mejorar la modularidad.
+
+### ¿Cómo identificar cuándo utilizar este patrón?
+La necesidad de aplicar este patrón se puede identificar en procesos que se basan en pasos secuenciales, donde se deben agregar verificaciones o condiciones. A medida que la funcionalidad crece, el código tiende a saturarse de declaraciones if, lo que puede dificultar su mantenimiento y comprensión. El patrón Chain of Responsibility ayuda a resolver este problema al separar las responsabilidades de cada paso del proceso en clases independientes.
+
+Por ejemplo, en el caso del scoring de un pedido, se pueden identificar varios pasos que se deben validar:
+
+¿El cliente del pedido tiene pedidos previos?
+¿El cliente realiza el pago con su método de pago habitual?
+¿El pedido supera una cierta cantidad?
+
+La aplicación del patrón permite que cada paso del proceso se separe en distintas clases, donde cada clase tiene una única responsabilidad. De esta manera, el pedido o solicitud puede ser procesado a través de una cadena de manejadores, que se encargan de evaluar y aplicar cada paso hasta obtener un resultado final. Esto no solo mejora la organización del código, sino que también facilita su expansión y mantenimiento a medida que se agregan nuevas verificaciones o condiciones.
+
+## Ejemplo Práctico de Código
+
+```// Clase abstracta base
+abstract class Manejador {
+    protected Manejador siguienteManejador;
+
+    public void setSiguiente(Manejador manejador) {
+        this.siguienteManejador = manejador;
+    }
+
+    public abstract void manejar(String solicitud);
+}
+
+// Manejadores concretos
+class ManejadorA extends Manejador {
+    public void manejar(String solicitud) {
+        if ("A".equals(solicitud)) {
+            System.out.println("ManejadorA procesó la solicitud.");
+        } else if (siguienteManejador != null) {
+            siguienteManejador.manejar(solicitud);
+        }
+    }
+}
+
+class ManejadorB extends Manejador {
+    public void manejar(String solicitud) {
+        if ("B".equals(solicitud)) {
+            System.out.println("ManejadorB procesó la solicitud.");
+        } else if (siguienteManejador != null) {
+            siguienteManejador.manejar(solicitud);
+        }
+    }
+}
+
+class Cliente {
+    public static void main(String[] args) {
+        Manejador manejadorA = new ManejadorA();
+        Manejador manejadorB = new ManejadorB();
+
+        manejadorA.setSiguiente(manejadorB);
+
+        manejadorA.manejar("A");
+        manejadorA.manejar("B");
+        manejadorA.manejar("C");
+    }
+}
