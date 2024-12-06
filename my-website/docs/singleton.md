@@ -130,3 +130,19 @@ Ten en cuenta que siempre podrás ajustar esta limitación y permitir la creaci�
    - Los otros objetos no podrán hacerlo.
 5. **Repasa el código cliente**:
    - Sustituye todas las llamadas directas al constructor de la instancia Singleton por llamadas a su método de creación estático.
+
+### Pros y contras del patrón Singleton
+
+#### Pros 
+✅ Puedes tener la certeza de que una clase tiene una única instancia.  
+✅ Obtienes un punto de acceso global a dicha instancia.  
+✅ El objeto Singleton solo se inicializa cuando se requiere por primera vez.  
+
+#### Contras 
+❌ Vulnera el Principio de responsabilidad única. El patrón resuelve dos problemas al mismo tiempo.  
+❌ Puede enmascarar un mal diseño, por ejemplo, cuando los componentes del programa saben demasiado los unos sobre los otros.  
+❌ Requiere un tratamiento especial en un entorno con múltiples hilos de ejecución, para evitar que varios hilos creen un objeto Singleton varias veces.  
+❌ Puede resultar complicado realizar pruebas unitarias del código cliente del Singleton:
+Muchos frameworks de prueba dependen de la herencia para crear objetos simulados (mock objects).
+  - Debido a que la clase Singleton es privada y los métodos estáticos no se pueden sobrescribir en la mayoría de los lenguajes, realizar pruebas unitarias puede ser un desafío.
+  - Esto podría implicar buscar formas originales de simular el Singleton, no escribir pruebas, o simplemente evitar usar este patrón.
