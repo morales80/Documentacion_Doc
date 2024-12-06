@@ -148,3 +148,6 @@ El patrón **Factory Method** se aplica en diversas situaciones.
 * En frameworks de desarrollo, permite la creación de objetos sin que el framework dependa de las clases concretas que el usuario utiliza. 
 * En sistemas de plugins, facilita la creación dinámica de componentes según las necesidades del sistema, sin modificar el código base. 
 * En interfaces gráficas, se utiliza para generar distintos controles visuales, como botones o cuadros de texto, según la plataforma, manteniendo la coherencia del diseño. Esto proporciona flexibilidad y escalabilidad al sistema.
+
+> El patrón Factory Method es una herramienta poderosa que permite desacoplar la creación de objetos de su uso, lo que facilita la extensión de sistemas sin modificar el código existente. 
+Es útil cuando se necesita crear diferentes tipos de objetos de una misma familia sin alterar la lógica principal del sistema. Aunque presenta algunas desventajas, como mayor complejidad y dependencia entre clases, su capacidad de flexibilizar la creación de objetos lo hace ideal para aplicaciones escalables y dinámicas.
