@@ -42,7 +42,7 @@ _En esta implementación, la clase editora no mantiene la lista de suscripción 
 
 _Añadir nuevos suscriptores al programa no requiere cambios en clases notificadoras existentes, siempre y cuando trabajen con todos los suscriptores a través de la misma interfaz._
 
-// La clase notificadora base incluye código de gestión de
+```// La clase notificadora base incluye código de gestión de
 // suscripciones y métodos de notificación.
 class EventManager is
     private field listeners: hash map of event types and listeners
@@ -131,7 +131,7 @@ class Application is
             "admin@example.com",
             "Someone has changed the file: %s")
         editor.events.subscribe("save", emailAlerts)
-
+```
 
 ### Cómo implementarlo
 
