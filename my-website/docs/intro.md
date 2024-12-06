@@ -107,7 +107,7 @@ Ejemplos de patrones de comportamiento:
 * **Template Method:** Proporciona una estructura para resolver problemas reutilizando pasos comunes.
 * **Visitor:** Permite definir operaciones nuevas sin modificar las estructuras de datos subyacentes.
 
-En esencia, los patrones de diseño no son recetas mágicas, sino herramientas poderosas que permiten escribir código de calidad profesional. Al aplicar estas soluciones probadas, los desarrolladores pueden enfrentar desafíos comunes con confianza, mejorar la colaboración en equipo y crear software robusto y escalable. Aprender a utilizarlos es un paso clave para evolucionar como programador y optimizar el proceso de desarrollo.
+![](https://profile.es/wp-content/media/Patrones-de-diseno-de-software.png)
 
 ### Aplicaciones en Proyectos Reales
 
@@ -125,7 +125,5 @@ A la hora de implementar patrones de diseño, es importante evitar algunos error
 - **Patrones mal aplicados:** Implementar un patrón sin comprender sus beneficios o sin tener en cuenta el contexto puede resultar en un diseño innecesariamente complejo.
 - **No adaptar los patrones:** Aplicar un patrón de manera rígida sin considerar el contexto específico del proyecto puede generar un diseño ineficiente.
 
-
-
-
+>En esencia, los patrones de diseño no son recetas mágicas, sino herramientas poderosas que permiten escribir código de calidad profesional. Al aplicar estas soluciones probadas, los desarrolladores pueden enfrentar desafíos comunes con confianza, mejorar la colaboración en equipo y crear software robusto y escalable. Aprender a utilizarlos es un paso clave para evolucionar como programador y optimizar el proceso de desarrollo.
 
