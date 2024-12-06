@@ -1,5 +1,5 @@
 
-**También llamado:** Estrategia
+**También llamado:** _Estrategia_
 
 ### proposito
 _El patrón de diseño *Strategy* es un enfoque de comportamiento que te permite crear un conjunto de algoritmos relacionados, encapsular cada uno en su propia clase y permitir que los objetos que los usan puedan cambiar dinámicamente entre ellos según sea necesario. Esto facilita la flexibilidad y el mantenimiento del código al separar la lógica de los algoritmos de la lógica del cliente._
