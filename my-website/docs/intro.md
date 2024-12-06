@@ -9,6 +9,9 @@ software. Cada patrón es como un plano que se
 puede personalizar para resolver un problema de
 diseño particular de tu código..
 
+![Texto alternativo](https://binnariumedu.com/images/1.png "Título alternativo")
+
+
 ### Historia de los patrones
 El concepto de los patrones fue descrito por Christopher Alexander en El lenguaje de patrones. El libro habla de un “lenguaje” para diseñar el entorno urbano. Las unidades de este lenguaje son los patrones. Pueden describir lo altas que tienen que ser las ventanas, cuántos niveles debe tener un edificio, cuan grandes deben ser las zonas verdes de un barrio, etcétera.
 
