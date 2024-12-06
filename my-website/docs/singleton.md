@@ -103,3 +103,10 @@ El patrón **Factory Method** se utiliza para crear objetos sin especificar la c
 
 * Singleton vs Prototype:
 El patrón **Prototype** crea nuevos objetos copiando un objeto existente en lugar de crear instancias de una clase. A diferencia del Singleton, el Prototype puede generar múltiples instancias, lo que lo hace más flexible en ciertos casos, pero menos útil cuando solo se necesita una instancia única.
+
+### Aplicabilidad
+
+>Utiliza el patrón Singleton cuando una clase de tu programa tan solo deba tener una instancia disponible para todos los clientes; por ejemplo, un único objeto de base de datos compartido por distintas partes del programa.
+
+>El patrón Singleton deshabilita el resto de las maneras de crear objetos de una clase, excepto el método especial de creación. Este método crea un nuevo objeto, o bien devuelve uno existente si ya ha sido creado.
+
