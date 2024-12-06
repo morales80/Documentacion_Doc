@@ -113,3 +113,13 @@ class Cliente {
 - **Chain of Responsibility vs. Observer**: Mientras que Chain of Responsibility se enfoca en la forma de delegar la responsabilidad de manejar una solicitud a un conjunto de objetos, Observer se usa para notificar a un conjunto de objetos sobre cambios en el estado de un objeto. Aunque ambos patrones usan la delegación, el Observer se centra más en la notificación de eventos, mientras que Chain of Responsibility maneja la solicitud de manera jerárquica.
  
 - **Chain of Responsibility vs. Strategy**: En Strategy, un objeto delega su comportamiento a un objeto de estrategia, el cual puede ser cambiado en tiempo de ejecución. En Chain of Responsibility, los objetos están encadenados y la solicitud se maneja por el primer objeto que pueda procesarla, sin necesidad de cambiar el comportamiento de los objetos en tiempo de ejecución. 
+
+### Casos de uso comunes del patrón Chain of Responsibility:**
+ 
+- **Manejo de solicitudes HTTP**: En un servidor web, las solicitudes HTTP pueden ser procesadas por diferentes filtros de manera secuencial. Por ejemplo, un filtro podría verificar la autenticidad de un usuario, otro podría revisar permisos, y otro podría hacer la transformación de datos. Si un filtro no puede manejar la solicitud, la pasa al siguiente en la cadena.
+ 
+- **Manejo de excepciones**: En un sistema de manejo de errores, diferentes objetos o clases pueden encargarse de manejar excepciones específicas. Si una excepción no puede ser manejada por un objeto, se pasa a otro hasta que se encuentra un manejador adecuado o se decide que la excepción no puede ser gestionada.
+ 
+- **Interfaz de usuario con múltiples eventos**: En una interfaz gráfica, diferentes manejadores pueden procesar distintos tipos de eventos de entrada, como clics de ratón o presiones de teclas. Si un evento no es gestionado por un manejador, se pasa al siguiente hasta que uno lo maneje.
+ 
+- **Procesamiento de cadenas de texto**: Cuando se tiene una serie de transformaciones que deben aplicarse a un texto (como validación, limpieza, formateo, etc.), el patrón Chain of Responsibility permite que cada transformación sea manejada por un objeto de la cadena, pasando el texto a lo largo de los manejadores hasta que se haya procesado completamente.
