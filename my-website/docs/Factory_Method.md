@@ -23,3 +23,12 @@ Por ejemplo:
 De este modo, el patrón asegura que el creador puede generar productos de manera flexible y extensible, sin depender directamente de sus implementaciones concretas.
 
 De este modo, el patrón asegura que el creador puede generar productos de manera flexible y extensible, sin depender directamente de sus implementaciones concretas.
+
+### ¿Cómo Funciona?
+
+El patrón Factory Method delega la creación de objetos a las subclases del creador, asegurando que el creador no dependa de las clases concretas de los productos. Esto se logra a través de un método abstracto, que actúa como una "fábrica" para producir los objetos requeridos.
+
+Es decir el creador no debe conocer los detalles específicos de los tipos de productos que crea. En su lugar, las subclases del creador son las responsables de definir los tipos concretos de los productos que se generarán.
+
+
+
