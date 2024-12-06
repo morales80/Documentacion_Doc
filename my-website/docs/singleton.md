@@ -117,3 +117,16 @@ Utiliza el patrón Singleton cuando necesites un control más estricto de las va
  Al contrario que las variables globales, el patrón Singleton garantiza que haya una única instancia de una clase. A excepción de la propia clase Singleton, nada puede sustituir la instancia en caché.
 
 Ten en cuenta que siempre podrás ajustar esta limitación y permitir la creación de cierto número de instancias Singleton. La única parte del código que requiere cambios es el cuerpo del método **_getInstance_**.
+
+### Pasos para implementar el patrón Singleton
+
+1. **Añade un campo estático privado** a la clase para almacenar la instancia Singleton.
+2. **Declara un método de creación estático público** para obtener la instancia Singleton.
+3. **Implementa una inicialización diferida dentro del método estático:**
+   - Crea un nuevo objeto en su primera llamada y colócalo dentro del campo estático.
+   - El método deberá devolver siempre esa instancia en todas las llamadas siguientes.
+4. **Declara el constructor de clase como privado**:
+   - El método estático de la clase podrá invocar al constructor.
+   - Los otros objetos no podrán hacerlo.
+5. **Repasa el código cliente**:
+   - Sustituye todas las llamadas directas al constructor de la instancia Singleton por llamadas a su método de creación estático.
