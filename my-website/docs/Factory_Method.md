@@ -141,3 +141,10 @@ El patrón Factory Method se diferencia de otros patrones como el Abstract Facto
 * **_Singleton:_** A diferencia del Factory Method, que puede generar varias instancias de un producto, el Singleton asegura que solo haya una instancia de una clase en todo el sistema.
 
 Cada patrón tiene su caso de uso específico, dependiendo de la flexibilidad y los requisitos del sistema.
+
+### Casos de uso comunes del patrón Factory Method:
+
+El patrón **Factory Method** se aplica en diversas situaciones. 
+* En frameworks de desarrollo, permite la creación de objetos sin que el framework dependa de las clases concretas que el usuario utiliza. 
+* En sistemas de plugins, facilita la creación dinámica de componentes según las necesidades del sistema, sin modificar el código base. 
+* En interfaces gráficas, se utiliza para generar distintos controles visuales, como botones o cuadros de texto, según la plataforma, manteniendo la coherencia del diseño. Esto proporciona flexibilidad y escalabilidad al sistema.
