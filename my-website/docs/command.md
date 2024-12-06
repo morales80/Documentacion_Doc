@@ -211,7 +211,7 @@ class Application is
  
 - _Puedes ensamblar un grupo de comandos simples para crear uno complejo._
 
-! [ventajas](https://www.techuseful.com/wp-content/uploads/2021/03/Pros-2048x1152.png)
+! [ventajas](https://global-uploads.webflow.com/5e38f1a8e654dab96f303972/6101804be1c8822568372e45_Ventajas-y-desventajas_MAIN.jpg)
 
 
 ## Contras
