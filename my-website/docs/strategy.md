@@ -15,15 +15,15 @@ _Imagina que estás eligiendo cómo cocinar un huevo. Puedes freírlo, hervirlo 
 ## Estructura
 ![estructura](https://refactoring.guru/images/patterns/diagrams/strategy/structure-indexed.png?id=ff55c5a6273cf82a5667f3cab5b605c7)
 
-1. La clase **Contexto** mantiene una referencia a una de las estrategias concretas y se comunica con este objeto únicamente a través de la interfaz estrategia.
+1. _La clase **Contexto** mantiene una referencia a una de las estrategias concretas y se comunica con este objeto únicamente a través de la interfaz estrategia._
 
-2.  La interfaz **Estrategia** es común a todas las estrategias concretas. Declara un método que la clase contexto utiliza para ejecutar una estrategia.
+2.  _La interfaz **Estrategia** es común a todas las estrategias concretas. Declara un método que la clase contexto utiliza para ejecutar una estrategia._
 
-3.  Las **Estrategias Concretas** implementan distintas variaciones de un algoritmo que la clase contexto utiliza.
+3.  _Las **Estrategias Concretas** implementan distintas variaciones de un algoritmo que la clase contexto utiliza._
 
-4.  La clase contexto invoca el método de ejecución en el objeto de estrategia vinculado cada vez que necesita ejecutar el algoritmo. La clase contexto no sabe con qué tipo de estrategia funciona o cómo se ejecuta el algoritmo.
+4.  _La clase contexto invoca el método de ejecución en el objeto de estrategia vinculado cada vez que necesita ejecutar el algoritmo. La clase contexto no sabe con qué tipo de estrategia funciona o cómo se ejecuta el algoritmo._
 
-5.  El **Cliente** crea un objeto de estrategia específico y lo pasa a la clase contexto. La clase contexto expone un modificador set que permite a los clientes sustituir la estrategia asociada al contexto durante el tiempo de ejecución.
+5.  _El **Cliente** crea un objeto de estrategia específico y lo pasa a la clase contexto. La clase contexto expone un modificador set que permite a los clientes sustituir la estrategia asociada al contexto durante el tiempo de ejecución._
 
 ## Pseudocódigo
 _En este ejemplo, el contexto utiliza varias estrategias para ejecutar diversas operaciones aritméticas._
@@ -110,24 +110,24 @@ class ExampleApplication is
 
 ## Pros
 
- 1. Puedes intercambiar algoritmos usados dentro de un objeto durante el tiempo de ejecución.
+ 1. _Puedes intercambiar algoritmos usados dentro de un objeto durante el tiempo de ejecución._
 
- 2. Puedes aislar los detalles de implementación de un algoritmo del código que lo utiliza.
+ 2. _Puedes aislar los detalles de implementación de un algoritmo del código que lo utiliza._
 
- 3. Puedes sustituir la herencia por composición.
+ 3. _Puedes sustituir la herencia por composición._
 
- 4. Principio de abierto/cerrado. Puedes introducir nuevas estrategias sin tener que cambiar el contexto.
+ 4. _Principio de abierto/cerrado. Puedes introducir nuevas estrategias sin tener que cambiar el contexto._
 
 ![ventajas](https://krative.digital/content/images/2023/06/Strategy-1.png)
 
 ## contras
 
- 1. Si sólo tienes un par de algoritmos que raramente cambian, no hay una razón real para complicar el programa en exceso con nuevas clases e interfaces que vengan con el patrón.
+ 1. _Si sólo tienes un par de algoritmos que raramente cambian, no hay una razón real para complicar el programa en exceso con nuevas clases e interfaces que vengan con el patrón._
 
- 2. Los clientes deben conocer las diferencias entre estrategias para poder seleccionar la adecuada.
+ 2. _Los clientes deben conocer las diferencias entre estrategias para poder seleccionar la adecuada._
 
- 3. Muchos lenguajes de programación modernos tienen un soporte de tipo funcional que te permite implementar distintas versiones de un algoritmo dentro de un grupo de funciones anónimas. 
- Entonces puedes utilizar estas funciones exactamente como habrías utilizado los objetos de estrategia, pero sin saturar tu código con clases e interfaces adicionales.
+ 3. _Muchos lenguajes de programación modernos tienen un soporte de tipo funcional que te permite implementar distintas versiones de un algoritmo dentro de un grupo de funciones anónimas. _
+ Entonces puedes utilizar estas funciones exactamente como habrías utilizado los objetos de estrategia, pero sin saturar tu código con clases e interfaces adicionales._
 
 ![desventajas](https://media.istockphoto.com/vectors/like-and-dislike-icons-set-thumb-up-symbol-finger-up-icon-like-and-vector-id1158443058?k=20&m=1158443058&s=170667a&w=0&h=MFgFP-4y4KmKgxOml7rp7EiSH4W6bRvN7Uh4zINfze0=)
 
