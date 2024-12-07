@@ -18,7 +18,7 @@ const config = {
   url: 'https://Lu15R.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/Documentacion_Doc',
+  baseUrl: '/Documentacion_Doc/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
